@@ -45,7 +45,21 @@ public class FileAppenderModule extends Module {
 	@Override
 	protected void loadConfiguration() {
 		if (configuration.containsKey("path")) {
-			path = configuration.getStringProperty("path");			
+			path = configuration.getStringProperty("path");
+			
+			try {
+				File pathFile = new File(path);
+				pathFile.createNewFile();
+				File pathFileParentDirectory = new File(pathFile.getPath());
+				
+				if (!pathFileParentDirectory.exists()) {
+					pathFileParentDirectory.mkdirs();
+				}
+				
+				pathFile.delete();
+			} catch (IOException e) {
+				log.error("Error initializing path", e);
+			}
 		}
 		
 		if (configuration.containsKey("timestamp") && "true".equals(configuration.getStringProperty("timestamp"))) {

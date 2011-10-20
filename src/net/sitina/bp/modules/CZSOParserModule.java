@@ -147,7 +147,9 @@ public class CZSOParserModule extends Module {
 		}
 
 		for (String resPart : resultArray) {
-			result += resPart.replaceAll(";", "-") + ";";
+			if (resPart != null) {
+				result += resPart.replaceAll(";", "-") + ";";
+			}
 		}
 		
 		return result;

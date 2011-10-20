@@ -24,11 +24,9 @@ public class ModulesRunner extends Thread {
 	public static void main(String[] args) {
 		Configuration c = new PropertiesConfiguration();
 		
-		c = new PropertiesConfiguration("config/bpCZSODownload.properties");
-		
-		// c = new PropertiesConfiguration("config/bpCZSOProcess.properties");
-		
-		// c = new PropertiesConfiguration("config/bpCZSOMergeResults.properties");
+		if (args != null && args.length > 0) {
+			c = new PropertiesConfiguration(args[0]);
+		}
 		
 		ModulesRunner mr = new ModulesRunner(c);
 		mr.start();

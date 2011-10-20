@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Sat Oct 01 09:44:56 CEST 2011:
- Zavádění serveru Derby verze The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-0132-be71-68f3-000002cc1bf8
-v adresáři databáze /home/jirka/ws/BatchProcessor/jdbcDemoDB  sun.misc.Launcher$AppClassLoader@77cde100 
+Thu Oct 20 20:03:32 CEST 2011:
+ Zavádění serveru Derby verze The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-0133-2280-9479-000002c997e8
+v adresáři databáze /home/jirka/ws/BatchProcessor/jdbcDemoDB  sun.misc.Launcher$AppClassLoader@35a16869 
 
 java.vendor=Sun Microsystems Inc.
 java.runtime.version=1.6.0_26-b03

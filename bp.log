@@ -3832,3 +3832,775 @@ Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL:
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1436)
 	at net.sitina.bp.modules.FileDownloaderModule.download(FileDownloaderModule.java:111)
 	... 4 more
+2011-10-18 18:34:10,144 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LoopModule, instance # 0
+2011-10-18 18:34:10,166 DEBUG [Thread-1] - module net.sitina.bp.modules.LoopModule, instance # 0 started
+2011-10-18 18:34:10,167 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 0
+2011-10-18 18:34:10,168 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 0 started
+2011-10-18 18:34:10,168 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 1
+2011-10-18 18:34:10,171 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 1 started
+2011-10-18 18:34:10,171 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 0
+2011-10-18 18:34:10,177 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 0 started
+2011-10-18 18:34:10,177 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 1
+2011-10-18 18:34:10,182 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 1 started
+2011-10-18 18:34:10,182 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 2
+2011-10-18 18:34:10,182 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 2 started
+2011-10-18 18:34:10,183 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 3
+2011-10-18 18:34:10,187 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 3 started
+2011-10-18 18:34:10,187 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 0
+2011-10-18 18:34:10,190 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 0 started
+2011-10-18 18:34:10,190 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 1
+2011-10-18 18:34:10,198 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 1 started
+2011-10-18 18:34:10,198 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 2
+2011-10-18 18:34:10,198 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 2 started
+2011-10-18 18:34:10,198 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 3
+2011-10-18 18:34:10,199 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 3 started
+2011-10-18 18:34:10,199 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 0
+2011-10-18 18:34:10,209 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 0 started
+2011-10-18 18:34:10,209 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 1
+2011-10-18 18:34:10,212 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 1 started
+2011-10-18 18:34:10,212 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 2
+2011-10-18 18:34:10,212 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 2 started
+2011-10-18 18:34:10,212 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 3
+2011-10-18 18:34:10,213 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 3 started
+2011-10-18 18:34:10,213 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 4
+2011-10-18 18:34:10,221 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 4 started
+2011-10-18 18:34:10,221 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 5
+2011-10-18 18:34:10,222 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 5 started
+2011-10-18 18:34:10,222 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 6
+2011-10-18 18:34:10,227 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 6 started
+2011-10-18 18:34:10,227 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 7
+2011-10-18 18:34:10,228 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 7 started
+2011-10-18 18:34:10,228 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-18 18:34:10,229 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-18 18:35:16,898 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 1 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2542261.html')
+2011-10-18 18:36:12,912 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 2 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2541076.html')
+2011-10-18 18:37:05,928 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 3 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2539827.html')
+2011-10-18 18:37:56,950 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 4 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2538487.html')
+2011-10-18 18:38:43,963 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 5 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2537196.html')
+2011-10-18 18:39:55,978 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 6 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2536086.html')
+2011-10-18 18:40:52,989 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 7 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2534862.html')
+2011-10-18 18:42:14,007 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 8 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2533659.html')
+2011-10-18 18:43:34,038 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 9 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2532406.html')
+2011-10-18 18:44:31,202 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 10 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2531173.html')
+2011-10-18 18:45:42,218 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 11 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2529961.html')
+2011-10-18 18:46:51,239 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 12 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2528809.html')
+2011-10-18 18:47:50,267 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 13 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2527540.html')
+2011-10-18 18:48:47,297 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 14 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2526162.html')
+2011-10-18 18:49:50,445 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 15 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2525031.html')
+2011-10-18 18:50:47,500 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 16 000 items (last item: '../down/irsw/detail.jsp-prajed_id=4481329.html')
+2011-10-18 18:51:50,530 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 17 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2523055.html')
+2011-10-18 18:53:00,570 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 18 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2521674.html')
+2011-10-18 18:54:11,624 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 19 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2520348.html')
+2011-10-18 18:55:24,644 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 20 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2519134.html')
+2011-10-18 18:56:59,762 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 21 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3148247.html')
+2011-10-18 18:58:40,818 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 22 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2516873.html')
+2011-10-18 19:00:38,914 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 23 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2515536.html')
+2011-10-18 19:02:38,382 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 24 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2514241.html')
+2011-10-18 19:04:14,589 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 25 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2512993.html')
+2011-10-18 19:06:05,677 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 26 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2511683.html')
+2011-10-18 19:08:27,827 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 27 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2510464.html')
+2011-10-18 19:10:24,012 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 28 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2509256.html')
+2011-10-18 19:11:55,080 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 29 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3243803.html')
+2011-10-18 19:13:28,131 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 30 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2506972.html')
+2011-10-18 19:15:13,155 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 31 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2505858.html')
+2011-10-18 19:16:59,330 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 32 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2504544.html')
+2011-10-18 19:18:46,091 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 33 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3636143.html')
+2011-10-18 19:20:36,144 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 34 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2501989.html')
+2011-10-18 19:22:19,172 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 35 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2500801.html')
+2011-10-18 19:24:08,217 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 36 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2499608.html')
+2011-10-18 19:26:08,316 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 37 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2498399.html')
+2011-10-18 19:28:08,488 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 38 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2497176.html')
+2011-10-18 19:29:33,149 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileLoaderModule, instance # 0
+2011-10-18 19:29:33,197 DEBUG [Thread-1] - module net.sitina.bp.modules.FileLoaderModule, instance # 0 started
+2011-10-18 19:29:33,197 DEBUG [net.sitina.bp.modules.FileLoaderModule 1] - Processing startup
+2011-10-18 19:29:33,197 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 0
+2011-10-18 19:29:33,208 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 0 started
+2011-10-18 19:29:33,208 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 1
+2011-10-18 19:29:33,209 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 1 started
+2011-10-18 19:29:33,209 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 2
+2011-10-18 19:29:33,224 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 2 started
+2011-10-18 19:29:33,224 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 3
+2011-10-18 19:29:33,225 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 3 started
+2011-10-18 19:29:33,225 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 0
+2011-10-18 19:29:34,236 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 0 started
+2011-10-18 19:29:34,237 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 1
+2011-10-18 19:29:35,239 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 1 started
+2011-10-18 19:29:35,239 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 2
+2011-10-18 19:29:36,249 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 2 started
+2011-10-18 19:29:36,249 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 3
+2011-10-18 19:29:36,485 INFO [net.sitina.bp.modules.FileLoaderModule 1] - Processing complete
+2011-10-18 19:29:37,249 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 3 started
+2011-10-18 19:29:37,249 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 4
+2011-10-18 19:29:38,255 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 4 started
+2011-10-18 19:29:38,255 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 5
+2011-10-18 19:32:11,459 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileLoaderModule, instance # 0
+2011-10-18 19:32:11,470 DEBUG [Thread-1] - module net.sitina.bp.modules.FileLoaderModule, instance # 0 started
+2011-10-18 19:32:11,471 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 0
+2011-10-18 19:32:11,472 DEBUG [net.sitina.bp.modules.FileLoaderModule 1] - Processing startup
+2011-10-18 19:32:11,481 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 0 started
+2011-10-18 19:32:11,481 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 1
+2011-10-18 19:32:11,482 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 1 started
+2011-10-18 19:32:11,482 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 2
+2011-10-18 19:32:11,492 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 2 started
+2011-10-18 19:32:11,492 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 3
+2011-10-18 19:32:11,499 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 3 started
+2011-10-18 19:32:11,499 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 0
+2011-10-18 19:32:13,108 INFO [net.sitina.bp.modules.FileLoaderModule 1] - Processing complete
+2011-10-18 19:32:19,603 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 0 started
+2011-10-18 19:32:19,603 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 1
+2011-10-18 19:32:21,080 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 1 started
+2011-10-18 19:32:21,080 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 2
+2011-10-18 19:32:25,230 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 2 started
+2011-10-18 19:32:25,230 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 3
+2011-10-18 19:32:26,233 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 3 started
+2011-10-18 19:32:26,233 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 4
+2011-10-18 19:32:27,236 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 4 started
+2011-10-18 19:32:27,241 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 5
+2011-10-18 19:32:28,268 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 5 started
+2011-10-18 19:32:28,268 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 6
+2011-10-18 19:32:29,275 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 6 started
+2011-10-18 19:32:29,275 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 7
+2011-10-18 19:32:30,280 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 7 started
+2011-10-18 19:32:30,280 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-18 19:32:30,313 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-18 19:32:30,343 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 1 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3216086.html;71305386;Josef Bartůšek;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;10.5.2004;-;Neuvedeno;Zprostředkování velkoobchodu a velkoobchod v zastoupení;Ostatní osoby samostatně výdělečně činné;CZ0100;')
+2011-10-18 19:32:30,361 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 2 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2613222.html;69682224;Josef Vařák;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;6.12.2000;-;Neuvedeno;Výroba nábytku;Ostatní osoby samostatně výdělečně činné;CZ0644;')
+2011-10-18 19:32:41,369 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 3 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3243758.html;71290729;Petr Králička;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;26.10.2004;-;Bez zaměstnanců;Výroba zámků a kování;Ostatní osoby samostatně výdělečně činné;CZ020C;')
+2011-10-18 19:32:55,386 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 4 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2603035.html;69575657;Petr Bajgar;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;8.11.1999;-;Neuvedeno;Silniční nákladní doprava;Ostatní osoby samostatně výdělečně činné;CZ0806;')
+2011-10-18 19:33:11,395 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 5 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2540061.html;68919590;Petr Němec;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;15.2.1999;-;Neuvedeno;Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona;Ostatní osoby samostatně výdělečně činné;CZ0723;')
+2011-10-18 19:33:31,400 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 6 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2521062.html;68716559;Mgr. Ivona Sochorová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;23.8.1999;-;Bez zaměstnanců;Činnosti v oblasti informačních technologií;Ostatní osoby samostatně výdělečně činné;CZ0722;')
+2011-10-18 19:33:52,411 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 7 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2524545.html;68755805;Ing. Martin Cibula;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;12.1.2000;-;Bez zaměstnanců;Informační činnosti;Ostatní osoby samostatně výdělečně činné;CZ0642;')
+2011-10-18 19:34:16,417 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 8 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2645392.html;70021082;Petr Grzegorz;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;11.5.2000;-;Neuvedeno;Výroba ostatních svrchních oděvů;Ostatní osoby samostatně výdělečně činné;CZ0802;')
+2011-10-18 19:34:45,434 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 9 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3249074.html;;1. Mateřská škola Karlovy Vary, Komenského 7, příspěvková organizace;331 - Příspěvková organizace;1.1.2005;-;50 - 99 zaměstnanců;Předškolní vzdělávání;Místní vládní instituce;;')
+2011-10-18 19:35:17,441 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 10 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2520199.html;;Milada Scheuerová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;1.6.1999;-;Neuvedeno;Činnosti v oblasti nemovitostí;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 19:35:59,571 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 11 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2510259.html;;Tomáš Singer;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;9.11.1998;-;Bez zaměstnanců;Stravování v restauracích, u stánků a v mobilních zařízeních;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 19:36:48,593 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 12 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2508962.html;;Eva Froubová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;8.7.1998;-;Neuvedeno;Zprostředkování velkoobchodu a velkoobchod v zastoupení;Ostatní osoby samostatně výdělečně činné;CZ020A;')
+2011-10-18 19:37:35,629 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 13 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2543373.html;;PhDr. Karolína Maloňová Friedlová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;1.2.1999;-;Bez zaměstnanců;Sportovní činnosti;Ostatní osoby samostatně výdělečně činné;CZ0802;')
+2011-10-18 19:38:27,657 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 14 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2681315.html;;Ing. Daniel Tureček;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;12.3.2001;-;Neuvedeno;Ostatní profesní, vědecké a technické činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 19:39:34,745 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 15 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3074019.html;;Sdružení rodičů a přátel při Základní umělecké škole Josefa Suka Benešov;731 - Organizační jednotka sdružení;10.10.1992;-;Neuvedeno;Činnosti ostatních organizací sdružujících osoby za účelem prosazování společných zájmů j. n.;Neziskové instituce sloužící domácnostem;CZ0201;')
+2011-10-18 19:40:43,095 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 16 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2651480.html;70083240;Oleg Frolovych;421 - Zahraniční osoba;3.4.2000;-;Neuvedeno;Stravování v restauracích, u stánků a v mobilních zařízeních;Nefinanční podniky soukromé pod zahraniční kontrolou;CZ0209;')
+2011-10-18 19:41:58,154 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 17 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2529913.html;68811519;Olha Matviyiv;421 - Zahraniční osoba;28.12.1998;-;Neuvedeno;Úklidové činnosti;Nefinanční podniky soukromé pod zahraniční kontrolou;CZ0323;')
+2011-10-18 19:43:26,208 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 18 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2529464.html;;Romana Němcová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;3.5.2000;-;Neuvedeno;Stravování v restauracích, u stánků a v mobilních zařízeních;Ostatní osoby samostatně výdělečně činné;CZ0411;')
+2011-10-18 19:45:11,317 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 19 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3133670.html;;Jiří Šimek;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;1.9.2003;-;Bez zaměstnanců;Výroba brašnářských, sedlářských a podobných výrobků;Ostatní osoby samostatně výdělečně činné;CZ0632;')
+2011-10-18 19:47:02,427 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 20 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2686597.html;;Vladislav Vojta;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;29.5.2000;-;Neuvedeno;Maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;CZ0316;')
+2011-10-18 19:48:59,518 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 21 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2680363.html;;Marcel Cvrkal;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;28.1.2002;-;Bez zaměstnanců;Výstavba bytových a nebytových budov;Ostatní osoby samostatně výdělečně činné;CZ0722;')
+2011-10-18 19:50:38,579 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 22 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2500923.html;;Sergiu Culai;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;7.7.1999;-;Neuvedeno;Maloobchod s počítači, počítačovým periferním zařízením a softwarem;Ostatní osoby samostatně výdělečně činné;CZ0525;')
+2011-10-18 19:52:00,745 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 23 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2525624.html;68766599;Hana Boušková;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;29.8.2001;-;Neuvedeno;Poskytování ostatních osobních služeb j. n.;Ostatní osoby samostatně výdělečně činné;CZ0642;')
+2011-10-18 19:53:45,800 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 24 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2642755.html;;Helena Grätzerová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;28.5.2001;-;Neuvedeno;Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona;Ostatní osoby samostatně výdělečně činné;CZ0712;')
+2011-10-18 19:55:29,194 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 25 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2626371.html;;Gabriela Foltýnová Kynclová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;29.11.1999;-;Bez zaměstnanců;Kadeřnické, kosmetické a podobné činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 19:57:26,267 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 26 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2524380.html;68754141;Karel Zeman;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;10.7.2000;-;Bez zaměstnanců;Silniční nákladní doprava;Ostatní osoby samostatně výdělečně činné;CZ0632;')
+2011-10-18 19:59:51,499 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 27 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2590371.html;;Miroslav Havrda;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;14.8.2001;-;Neuvedeno;Instalace vody, odpadu, plynu, topení a klimatizace;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:02:06,552 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 28 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2539681.html;;Petr Podhora;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;18.1.1999;-;Bez zaměstnanců;Zprostředkování specializovaného velkoobchodu a velkoobchod v zastoupení s ostatními výrobky j. n.;Ostatní osoby samostatně výdělečně činné;CZ0712;')
+2011-10-18 20:04:08,652 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 29 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2706737.html;;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;6.2.2002;-;Bez zaměstnanců;Výroba ostatních výrobků stavebního truhlářství a tesařství;Ostatní osoby samostatně výdělečně činné;CZ0100;')
+2011-10-18 20:06:40,486 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 30 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2540343.html;;Dana Najsarová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;3.5.1999;-;Neuvedeno;Výroba oděvů, kromě kožešinových výrobků;Ostatní osoby samostatně výdělečně činné;CZ0804;')
+2011-10-18 20:09:52,629 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 31 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2541355.html;;Petr Florián;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;4.10.1999;-;Neuvedeno;Stravování v restauracích, u stánků a v mobilních zařízeních;Ostatní osoby samostatně výdělečně činné;CZ0805;')
+2011-10-18 20:13:09,928 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 32 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2732400.html;;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;18.10.2001;-;Neuvedeno;Ostatní profesní, vědecké a technické činnosti;Ostatní osoby samostatně výdělečně činné;CZ0100;')
+2011-10-18 20:16:28,143 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 33 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2600247.html;;Vladimíra Grečnárová;107 - Zemědělský podnikatel - fyzická osoba nezapsaná v obchodním rejstříku;21.7.1999;-;Neuvedeno;Smíšené hospodářství;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:19:19,467 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 34 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2629124.html;;Růžena Hrůzová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;24.11.2000;-;Neuvedeno;Zprostředkování velkoobchodu a velkoobchod v zastoupení;Ostatní osoby samostatně výdělečně činné;CZ0631;')
+2011-10-18 20:22:32,725 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileLoaderModule, instance # 0
+2011-10-18 20:22:32,787 DEBUG [Thread-1] - module net.sitina.bp.modules.FileLoaderModule, instance # 0 started
+2011-10-18 20:22:32,787 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 0
+2011-10-18 20:22:32,795 DEBUG [net.sitina.bp.modules.FileLoaderModule 1] - Processing startup
+2011-10-18 20:22:32,820 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 0 started
+2011-10-18 20:22:32,820 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 1
+2011-10-18 20:22:32,841 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 1 started
+2011-10-18 20:22:32,841 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 2
+2011-10-18 20:22:32,846 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 2 started
+2011-10-18 20:22:32,847 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.CZSOParserModule, instance # 3
+2011-10-18 20:22:32,850 DEBUG [Thread-1] - module net.sitina.bp.modules.CZSOParserModule, instance # 3 started
+2011-10-18 20:22:32,850 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 0
+2011-10-18 20:22:34,085 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 0 started
+2011-10-18 20:22:34,100 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 1
+2011-10-18 20:22:35,100 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 1 started
+2011-10-18 20:22:35,101 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 2
+2011-10-18 20:22:36,101 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 2 started
+2011-10-18 20:22:36,102 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 3
+2011-10-18 20:22:37,102 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 3 started
+2011-10-18 20:22:37,102 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 4
+2011-10-18 20:22:38,108 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 4 started
+2011-10-18 20:22:38,109 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 5
+2011-10-18 20:22:39,113 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 5 started
+2011-10-18 20:22:39,113 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 6
+2011-10-18 20:22:39,477 INFO [net.sitina.bp.modules.FileLoaderModule 1] - Processing complete
+2011-10-18 20:22:40,129 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 6 started
+2011-10-18 20:22:40,129 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 7
+2011-10-18 20:22:41,150 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 7 started
+2011-10-18 20:22:41,151 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-18 20:22:41,181 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-18 20:22:55,227 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 1 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3112421.html;71180621;MUDr.Jana Blažková,soukromá ORL ambulance;105 - Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství nezapsaná v obchodním rejstříku;1.5.2003;-;Neuvedeno;Ambulantní a zubní zdravotní péče;Ostatní osoby samostatně výdělečně činné;CZ0207;')
+2011-10-18 20:23:10,240 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 2 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2501956.html;68515341;Karel Kořínek;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;20.3.2000;-;Bez zaměstnanců;Silniční nákladní doprava;Ostatní osoby samostatně výdělečně činné;CZ0523;')
+2011-10-18 20:23:33,259 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 3 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2509719.html;68595778;Jitka Slavíčková;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;30.8.1999;-;Neuvedeno;Zprostředkování specializovaného velkoobchodu a velkoobchod v zastoupení s ostatními výrobky j. n.;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:24:02,313 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 4 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2629514.html;69854645;Věra Růžková;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;22.2.2000;-;Neuvedeno;Balicí činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:24:31,341 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 5 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2651127.html;70079641;Emilie Affašová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;17.4.2000;-;Neuvedeno;Zprostředkování velkoobchodu a velkoobchod v zastoupení;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:25:04,431 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 6 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3072788.html;71170472;MUDr. Jaroslava Boháčová;105 - Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství nezapsaná v obchodním rejstříku;16.5.2003;-;1 - 5 zaměstnanců;Ambulantní a zubní zdravotní péče;Zaměstnavatelé;;')
+2011-10-18 20:25:37,580 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 7 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2591551.html;69448191;Roman Kondr;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;22.11.1999;-;Bez zaměstnanců;Instalace vody, odpadu, plynu, topení a klimatizace;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:26:19,708 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 8 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2606176.html;69607303;František Stoklasa;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;22.6.1999;-;20 - 24 zaměstnanci;Bezpečnostní a pátrací činnosti;Zaměstnavatelé;;')
+2011-10-18 20:27:16,805 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 9 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2519928.html;68704798;Marcel Dubovský;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;30.4.2001;-;Neuvedeno;Zprostředkování velkoobchodu a velkoobchod v zastoupení se základními zemědělskými produkty, živými zvířaty, textilními surovinami a polotovary;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:28:15,967 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 10 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2503613.html;68531770;Veronika Vimrová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;21.12.1998;-;Neuvedeno;Výroba plastových výrobků pro stavebnictví;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:29:27,079 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 11 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2534299.html;68855648;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;8.2.1999;-;Neuvedeno;Kadeřnické, kosmetické a podobné činnosti;Ostatní osoby samostatně výdělečně činné;CZ0100;')
+2011-10-18 20:30:47,242 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 12 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2516222.html;68663919;Karel Růžička;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;15.9.1999;-;Bez zaměstnanců;Podpůrné činnosti pro lesnictví;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:32:09,289 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 13 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2577420.html;69300984;Vladimír Astafiev;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;22.4.1999;-;Neuvedeno;Nespecializovaný velkoobchod;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:33:34,375 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 14 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2594871.html;69485178;Yanna Sdelnikova;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;3.7.2000;-;Neuvedeno;Ostatní maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:34:49,433 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 15 000 items (last item: '../down/irsw/detail.jsp-prajed_id=4825026.html;71129821;;105 - Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství nezapsaná v obchodním rejstříku;1.7.2010;-;Bez zaměstnanců;Překladatelské a tlumočnické činnosti;Ostatní osoby samostatně výdělečně činné;CZ0205;')
+2011-10-18 20:36:27,808 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 16 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2510758.html;68609221;Dušan Nešpor;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;14.10.1998;-;Bez zaměstnanců;Výroba nábytku;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:38:23,015 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 17 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2583889.html;69365814;Yuriy Gudz;421 - Zahraniční osoba;18.10.1999;-;Neuvedeno;Úklidové činnosti;Nefinanční podniky soukromé pod zahraniční kontrolou;;')
+2011-10-18 20:40:25,103 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 18 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2601467.html;69559953;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;2.11.1999;-;Neuvedeno;Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona;Ostatní osoby samostatně výdělečně činné;CZ0313;')
+2011-10-18 20:42:02,579 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 19 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2517913.html;68684495;Jezdecký klub Aberl;701 - Sdružení (svaz, spolek, společnost, klub aj.);24.11.1998;-;Neuvedeno;Činnosti sportovních klubů;Neziskové instituce sloužící domácnostem;;')
+2011-10-18 20:43:36,614 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 20 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2580757.html;69334561;Alois Řezníček;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;9.2.2000;-;Neuvedeno;Architektonické a inženýrské činnosti a související technické poradenství;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:45:39,731 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 21 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2515515.html;68656891;Josef Smička;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;30.11.1999;-;Neuvedeno;Výroba elektrických rozvodných a kontrolních zařízení;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:47:42,820 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 22 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2626486.html;69822620;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;25.10.1999;-;Neuvedeno;Činnosti pro osobní a fyzickou pohodu;Ostatní osoby samostatně výdělečně činné;CZ0524;')
+2011-10-18 20:49:35,073 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 23 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2525199.html;;Vojtěch Hlavinka;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;31.5.1999;-;Neuvedeno;Maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:51:29,134 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 24 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3289007.html;71292233;Ing. Filip Trešl;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;5.5.2005;-;Neuvedeno;Poradenství v oblasti řízení;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:53:29,302 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 25 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2686232.html;70509701;Petr Voldřich;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;18.2.2000;-;Bez zaměstnanců;Výstavba bytových a nebytových budov;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:55:29,337 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 26 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2712674.html;70831581;David Kořínek;107 - Zemědělský podnikatel - fyzická osoba nezapsaná v obchodním rejstříku;29.5.2000;-;Bez zaměstnanců;Pěstování plodin jiných než trvalých;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:57:45,615 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 27 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2517071.html;68672349;Sylva Stejskalová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;7.6.1999;-;Neuvedeno;Maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 20:59:59,777 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 28 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2695063.html;;Jaroslav Chýlek;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;19.7.2000;-;Bez zaměstnanců;Výstavba bytových a nebytových budov;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:02:28,946 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 29 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2510821.html;;Kateřina Jakubíčková;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;16.12.1998;-;Bez zaměstnanců;Kadeřnické, kosmetické a podobné činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:04:40,116 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 30 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2524484.html;68755198;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;23.9.1999;-;Neuvedeno;Ostatní vzdělávání;Ostatní osoby samostatně výdělečně činné;CZ0642;')
+2011-10-18 21:06:54,229 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 31 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2728862.html;;Zdeněk Kolářský;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;18.2.2002;-;Bez zaměstnanců;Výroba zámků a kování;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:08:55,331 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 32 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2595787.html;69498989;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;7.6.1999;-;Neuvedeno;Maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;CZ0209;')
+2011-10-18 21:11:07,859 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 33 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2725237.html;70957363;Iva Šťastná;105 - Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství nezapsaná v obchodním rejstříku;1.4.2002;-;Bez zaměstnanců;Ostatní pomocné činnosti související s pojišťovnictvím a penzijním financováním;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:13:25,938 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 34 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2691126.html;70568081;Zdeněk Mařík Ing.;105 - Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství nezapsaná v obchodním rejstříku;18.10.2000;-;Bez zaměstnanců;Ostatní profesní, vědecké a technické činnosti j. n.;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:15:45,013 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 35 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2630453.html;;Milan Sluka;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;29.9.1999;-;Bez zaměstnanců;Výroba nožířských výrobků, nástrojů a železářských výrobků;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:17:05,249 INFO [net.sitina.bp.modules.CZSOParserModule 2] - Processing complete
+2011-10-18 21:17:05,466 INFO [net.sitina.bp.modules.CZSOParserModule 3] - Processing complete
+2011-10-18 21:17:05,494 INFO [net.sitina.bp.modules.CZSOParserModule 1] - Processing complete
+2011-10-18 21:17:05,559 INFO [net.sitina.bp.modules.CZSOParserModule 4] - Processing complete
+2011-10-18 21:17:05,855 INFO [net.sitina.bp.modules.FileAppenderModule 8] - Processing complete
+2011-10-18 21:17:05,856 INFO [net.sitina.bp.modules.FileAppenderModule 2] - Processing complete
+2011-10-18 21:17:05,856 INFO [net.sitina.bp.modules.FileAppenderModule 5] - Processing complete
+2011-10-18 21:17:05,856 INFO [net.sitina.bp.modules.FileAppenderModule 3] - Processing complete
+2011-10-18 21:17:05,857 INFO [net.sitina.bp.modules.FileAppenderModule 6] - Processing complete
+2011-10-18 21:17:05,858 INFO [net.sitina.bp.modules.FileAppenderModule 7] - Processing complete
+2011-10-18 21:17:05,858 INFO [net.sitina.bp.modules.FileAppenderModule 1] - Processing complete
+2011-10-18 21:17:05,858 INFO [net.sitina.bp.modules.FileAppenderModule 4] - Processing complete
+2011-10-18 21:17:06,071 INFO [net.sitina.bp.modules.FinalModule 1] - Processing complete
+2011-10-18 21:28:37,201 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileLoaderModule, instance # 0
+2011-10-18 21:28:37,229 DEBUG [Thread-1] - module net.sitina.bp.modules.FileLoaderModule, instance # 0 started
+2011-10-18 21:28:37,229 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileStringReaderModule, instance # 0
+2011-10-18 21:28:37,233 DEBUG [net.sitina.bp.modules.FileLoaderModule 1] - Processing startup
+2011-10-18 21:28:37,237 DEBUG [Thread-1] - module net.sitina.bp.modules.FileStringReaderModule, instance # 0 started
+2011-10-18 21:28:37,237 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileStringReaderModule, instance # 1
+2011-10-18 21:28:37,240 DEBUG [Thread-1] - module net.sitina.bp.modules.FileStringReaderModule, instance # 1 started
+2011-10-18 21:28:37,240 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileStringReaderModule, instance # 2
+2011-10-18 21:28:37,241 DEBUG [Thread-1] - module net.sitina.bp.modules.FileStringReaderModule, instance # 2 started
+2011-10-18 21:28:37,241 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileStringReaderModule, instance # 3
+2011-10-18 21:28:37,241 DEBUG [Thread-1] - module net.sitina.bp.modules.FileStringReaderModule, instance # 3 started
+2011-10-18 21:28:37,242 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 0
+2011-10-18 21:28:37,251 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 0 started
+2011-10-18 21:28:37,251 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-18 21:28:37,302 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-18 21:28:48,373 ERROR [net.sitina.bp.modules.FileLoaderModule 1] - Exception in processing item 'startup'
+java.lang.NullPointerException
+	at net.sitina.bp.modules.FileLoaderModule.process(FileLoaderModule.java:27)
+	at net.sitina.bp.api.Module.run(Module.java:34)
+	at java.lang.Thread.run(Thread.java:662)
+2011-10-18 21:28:48,375 INFO [net.sitina.bp.modules.FileLoaderModule 1] - Processing complete
+2011-10-18 21:28:49,245 INFO [net.sitina.bp.modules.FileStringReaderModule 1] - Processing complete
+2011-10-18 21:28:49,246 INFO [net.sitina.bp.modules.FileStringReaderModule 3] - Processing complete
+2011-10-18 21:28:49,247 INFO [net.sitina.bp.modules.FileStringReaderModule 2] - Processing complete
+2011-10-18 21:28:49,248 INFO [net.sitina.bp.modules.FileStringReaderModule 4] - Processing complete
+2011-10-18 21:28:49,261 INFO [net.sitina.bp.modules.FileAppenderModule 1] - Processing complete
+2011-10-18 21:28:49,304 INFO [net.sitina.bp.modules.FinalModule 1] - Processing complete
+2011-10-18 21:29:12,807 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileLoaderModule, instance # 0
+2011-10-18 21:29:12,825 DEBUG [Thread-1] - module net.sitina.bp.modules.FileLoaderModule, instance # 0 started
+2011-10-18 21:29:12,825 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileStringReaderModule, instance # 0
+2011-10-18 21:29:12,826 DEBUG [net.sitina.bp.modules.FileLoaderModule 1] - Processing startup
+2011-10-18 21:29:12,828 INFO [net.sitina.bp.modules.FileLoaderModule 1] - Processing complete
+2011-10-18 21:29:12,829 DEBUG [Thread-1] - module net.sitina.bp.modules.FileStringReaderModule, instance # 0 started
+2011-10-18 21:29:12,829 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileStringReaderModule, instance # 1
+2011-10-18 21:29:12,830 DEBUG [net.sitina.bp.modules.FileStringReaderModule 1] - Processing ../down/tmp1/out.1318962154100.csv
+2011-10-18 21:29:12,840 DEBUG [Thread-1] - module net.sitina.bp.modules.FileStringReaderModule, instance # 1 started
+2011-10-18 21:29:12,840 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileStringReaderModule, instance # 2
+2011-10-18 21:29:12,841 DEBUG [net.sitina.bp.modules.FileStringReaderModule 2] - Processing ../down/tmp1/out.1318959148269.csv
+2011-10-18 21:29:12,842 DEBUG [Thread-1] - module net.sitina.bp.modules.FileStringReaderModule, instance # 2 started
+2011-10-18 21:29:12,842 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileStringReaderModule, instance # 3
+2011-10-18 21:29:12,843 DEBUG [net.sitina.bp.modules.FileStringReaderModule 3] - Processing ../down/tmp1/out.1318959149275.csv
+2011-10-18 21:29:12,844 DEBUG [Thread-1] - module net.sitina.bp.modules.FileStringReaderModule, instance # 3 started
+2011-10-18 21:29:12,844 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileAppenderModule, instance # 0
+2011-10-18 21:29:12,845 DEBUG [net.sitina.bp.modules.FileStringReaderModule 4] - Processing ../down/tmp1/out.1318962155101.csv
+2011-10-18 21:29:12,849 DEBUG [Thread-1] - module net.sitina.bp.modules.FileAppenderModule, instance # 0 started
+2011-10-18 21:29:12,849 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-18 21:29:12,852 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-18 21:29:13,058 DEBUG [net.sitina.bp.modules.FileStringReaderModule 1] - Processing ../down/tmp1/out.1318962156102.csv
+2011-10-18 21:29:13,104 DEBUG [net.sitina.bp.modules.FileStringReaderModule 4] - Processing ../down/tmp1/out.1318959138602.csv
+2011-10-18 21:29:13,350 DEBUG [net.sitina.bp.modules.FileStringReaderModule 3] - Processing ../down/tmp1/out.1318962158109.csv
+2011-10-18 21:29:13,425 DEBUG [net.sitina.bp.modules.FileStringReaderModule 1] - Processing ../down/tmp1/out.1318959147241.csv
+2011-10-18 21:29:13,629 DEBUG [net.sitina.bp.modules.FileStringReaderModule 3] - Processing ../down/tmp1/out.1318959144221.csv
+2011-10-18 21:29:13,641 DEBUG [net.sitina.bp.modules.FileStringReaderModule 2] - Processing ../down/tmp1/out.1318959145231.csv
+2011-10-18 21:29:13,859 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 1 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2497436.html;;Pavlína Severová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;17.3.1999;-;Neuvedeno;Zprostředkování specializovaného velkoobchodu a velkoobchod v zastoupení s ostatními výrobky j. n.;Ostatní osoby samostatně výdělečně činné;CZ0534;')
+2011-10-18 21:29:13,862 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 2 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2692381.html;70582548;Mgr. Barbora Janovcová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;13.6.2001;-;Bez zaměstnanců;Kadeřnické, kosmetické a podobné činnosti;Ostatní osoby samostatně výdělečně činné;CZ0421;')
+2011-10-18 21:29:13,879 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 3 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2637459.html;69938539;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;2.4.2001;-;Bez zaměstnanců;Činnosti pro osobní a fyzickou pohodu;Ostatní osoby samostatně výdělečně činné;CZ0412;')
+2011-10-18 21:29:13,886 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 4 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2506207.html;68557647;Oldřich Sivík;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;25.6.2001;-;Neuvedeno;Příprava staveniště;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:13,888 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 5 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3120696.html;68746687;Pavel Mikeš;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;14.7.2003;-;Bez zaměstnanců;Zprostředkování velkoobchodu a velkoobchod v zastoupení;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:13,892 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 6 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3138890.html;71189793;Společenství vlastníků domů č.p. 838, 839 v Třemošné;145 - Společenství vlastníků jednotek;8.9.2003;-;Neuvedeno;Pronájem a správa vlastních nebo pronajatých nemovitostí;Ostatní domácnosti;;')
+2011-10-18 21:29:13,900 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 7 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2526586.html;68777809;Iveta Bártová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;21.6.1999;-;Neuvedeno;Maloobchod s použitým zbožím v prodejnách;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:14,005 DEBUG [net.sitina.bp.modules.FileStringReaderModule 3] - Processing ../down/tmp1/out.1318962153085.csv
+2011-10-18 21:29:14,248 DEBUG [net.sitina.bp.modules.FileStringReaderModule 4] - Processing ../down/tmp1/out.1318962159113.csv
+2011-10-18 21:29:14,291 DEBUG [net.sitina.bp.modules.FileStringReaderModule 3] - Processing ../down/tmp1/out.1318962160129.csv
+2011-10-18 21:29:14,407 DEBUG [net.sitina.bp.modules.FileStringReaderModule 1] - Processing ../down/tmp1/out.1318962157103.csv
+2011-10-18 21:29:14,409 DEBUG [net.sitina.bp.modules.FileStringReaderModule 2] - Processing ../down/tmp1/out.1318959146233.csv
+2011-10-18 21:29:14,520 DEBUG [net.sitina.bp.modules.FileStringReaderModule 4] - Processing ../down/tmp1/out.1318959140072.csv
+2011-10-18 21:29:14,543 INFO [net.sitina.bp.modules.FileStringReaderModule 1] - Processing complete
+2011-10-18 21:29:14,551 INFO [net.sitina.bp.modules.FileStringReaderModule 3] - Processing complete
+2011-10-18 21:29:14,896 INFO [net.sitina.bp.modules.FileStringReaderModule 2] - Processing complete
+2011-10-18 21:29:14,903 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 8 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2522731.html;68733577;Lucie Zavadilová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;24.11.1999;-;Bez zaměstnanců;Kadeřnické, kosmetické a podobné činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:14,923 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 9 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2569276.html;69217688;Anna Parmová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;28.2.2000;-;Bez zaměstnanců;Ostatní profesní, vědecké a technické činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:14,930 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 10 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3048048.html;;Věra Faktorová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;14.8.2002;-;Bez zaměstnanců;Maloobchod se sportovním vybavením;Ostatní osoby samostatně výdělečně činné;CZ020B;')
+2011-10-18 21:29:14,935 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 11 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2510908.html;68610751;Vlastimil Vídeňka;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;3.3.1999;-;Neuvedeno;Výroba ostatních výrobků stavebního truhlářství a tesařství;Ostatní osoby samostatně výdělečně činné;CZ0644;')
+2011-10-18 21:29:14,946 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 12 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2568939.html;;Milan Győri;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;7.7.1999;-;Neuvedeno;Silniční nákladní doprava;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:14,948 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 13 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2528877.html;68800886;Nhuong Nguyen Van;421 - Zahraniční osoba;16.7.1999;-;Neuvedeno;Maloobchod s textilem, oděvy a obuví ve stáncích a na trzích;Nefinanční podniky soukromé pod zahraniční kontrolou;CZ0412;')
+2011-10-18 21:29:14,950 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 14 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2540565.html;;Jiří Očenášek;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;17.7.2000;-;Neuvedeno;Výstavba bytových a nebytových budov;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:15,010 INFO [net.sitina.bp.modules.FileStringReaderModule 4] - Processing complete
+2011-10-18 21:29:15,952 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 15 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2661841.html;70219575;Jiří Klaban;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;31.1.2000;-;1 - 5 zaměstnanců;Stravování v restauracích, u stánků a v mobilních zařízeních;Zaměstnavatelé;;')
+2011-10-18 21:29:15,962 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 16 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2511600.html;68617739;Hanna Jurijivna Aleksová Dinesová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;7.12.1999;-;Bez zaměstnanců;Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:15,968 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 17 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3015052.html;69727678;Milan Geyer;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;27.12.2000;-;Bez zaměstnanců;Výroba nožířských výrobků, nástrojů a železářských výrobků;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:15,980 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 18 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3229755.html;71229094;;331 - Příspěvková organizace;1.10.2004;-;25 - 49 zaměstnanců;Sociální péče v domovech pro seniory;Místní vládní instituce;CZ0209;')
+2011-10-18 21:29:15,988 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 19 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2610744.html;69656932;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;1.11.2000;-;Bez zaměstnanců;Instalace vody, odpadu, plynu, topení a klimatizace;Ostatní osoby samostatně výdělečně činné;CZ0632;')
+2011-10-18 21:29:15,993 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 20 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2510656.html;68605196;Milan Slaměna;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;3.6.1999;-;Bez zaměstnanců;Výstavba bytových a nebytových budov;Ostatní osoby samostatně výdělečně činné;CZ0724;')
+2011-10-18 21:29:16,002 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 21 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2514583.html;68647441;Mojmír Malý;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;20.5.1999;-;Bez zaměstnanců;Výroba nealkoholických nápojů- stáčení minerálních a ostatních vod do lahví;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:16,030 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 22 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2533303.html;68845511;Luděk Hrnčíř;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;1.1.1999;-;Neuvedeno;Ostatní profesní, vědecké a technické činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:16,042 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 23 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2701441.html;70691941;Václav Šroufek;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;28.6.2001;-;Neuvedeno;Zprostředkování velkoobchodu a velkoobchod v zastoupení;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:16,044 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 24 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2586648.html;69395101;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;3.11.1999;-;Neuvedeno;Maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;CZ0513;')
+2011-10-18 21:29:16,046 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 25 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2514006.html;68641851;;105 - Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství nezapsaná v obchodním rejstříku;11.4.2000;-;Bez zaměstnanců;Činnosti zástupců pojišťovny a makléřů;Ostatní osoby samostatně výdělečně činné;CZ0209;')
+2011-10-18 21:29:16,049 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 26 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3222956.html;68466072;Dušan Morávek;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;15.2.1999;-;1 - 5 zaměstnanců;Stravování v restauracích, u stánků a v mobilních zařízeních;Zaměstnavatelé;CZ0532;')
+2011-10-18 21:29:16,051 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 27 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2536668.html;68885024;Ivan Bača;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;6.9.2000;-;Bez zaměstnanců;Maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;CZ0100;')
+2011-10-18 21:29:16,054 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 28 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2506757.html;68565887;Jaroslava Medková;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;17.3.1999;-;Neuvedeno;Zprostředkování specializovaného velkoobchodu a velkoobchod v zastoupení s ostatními výrobky j. n.;Ostatní osoby samostatně výdělečně činné;CZ0206;')
+2011-10-18 21:29:16,056 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 29 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2523182.html;68738129;Martin Luník;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;22.6.1999;-;Neuvedeno;Silniční nákladní doprava;Ostatní osoby samostatně výdělečně činné;CZ0722;')
+2011-10-18 21:29:16,058 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 30 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2534079.html;68853394;Nguyen Duong Thi;421 - Zahraniční osoba;5.1.1998;-;Neuvedeno;Nespecializovaný velkoobchod;Nefinanční podniky soukromé pod zahraniční kontrolou;CZ0642;')
+2011-10-18 21:29:16,060 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 31 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2514130.html;68643012;Petra Šanclová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;10.10.1999;-;Bez zaměstnanců;Maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;CZ0646;')
+2011-10-18 21:29:16,062 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 32 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2585512.html;69382638;Stanislava Karlová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;1.11.2000;-;Neuvedeno;Výroba ostatních pryžových výrobků;Ostatní osoby samostatně výdělečně činné;CZ020B;')
+2011-10-18 21:29:16,064 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 33 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2717866.html;70883483;Asociace TOM ČR, TOM 4305 BOBŘI;731 - Organizační jednotka sdružení;6.12.2000;-;Neuvedeno;Činnosti organizací dětí a mládeže;Neziskové instituce sloužící domácnostem;CZ0806;')
+2011-10-18 21:29:16,066 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 34 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2498668.html;;Pavel Balla;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;18.12.1998;-;Neuvedeno;Výroba ostatních výrobků stavebního truhlářství a tesařství;Ostatní osoby samostatně výdělečně činné;CZ0523;')
+2011-10-18 21:29:16,068 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 35 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2502501.html;;Sportovní klub BIVOJ Stožec;701 - Sdružení (svaz, spolek, společnost, klub aj.);20.7.1998;-;Neuvedeno;Provozování sportovních zařízení;Neziskové instituce sloužící domácnostem;;')
+2011-10-18 21:29:16,070 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 36 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2534542.html;;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;21.9.1998;-;Neuvedeno;Ostatní profesní, vědecké a technické činnosti;Ostatní osoby samostatně výdělečně činné;CZ0100;')
+2011-10-18 21:29:16,072 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 37 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2503560.html;;Radim Randa;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;1.1.1999;-;Neuvedeno;Ostatní profesní, vědecké a technické činnosti;Ostatní osoby samostatně výdělečně činné;CZ0312;')
+2011-10-18 21:29:16,074 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 38 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2687598.html;70523550;Jiří Klomfar;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;10.4.2000;-;Bez zaměstnanců;Malířské a natěračské práce;Ostatní osoby samostatně výdělečně činné;CZ0312;')
+2011-10-18 21:29:16,076 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 39 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2497947.html;68474113;Michal Joska;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;12.5.1999;-;Neuvedeno;Ostatní maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:16,078 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 40 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2693900.html;;Josef Holoubek;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;7.6.2000;-;Neuvedeno;Taxislužba a pronájem osobních vozů s řidičem;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:16,080 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 41 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2507663.html;68575068;Roman Zalabák;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;25.3.1999;-;Bez zaměstnanců;Výroba nábytku;Ostatní osoby samostatně výdělečně činné;CZ0201;')
+2011-10-18 21:29:17,040 INFO [net.sitina.bp.modules.FileAppenderModule 1] - Processing complete
+2011-10-18 21:29:17,082 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 42 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2548660.html;;;421 - Zahraniční osoba;16.11.1998;-;Neuvedeno;Demolice a příprava staveniště;Nefinanční podniky soukromé pod zahraniční kontrolou;CZ0208;')
+2011-10-18 21:29:17,084 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 43 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3274944.html;71250638;Společenství pro dům Zlatá Harfa, Mariánské Lázně, Zeyerova 257/16;145 - Společenství vlastníků jednotek;16.9.2003;-;Neuvedeno;Pronájem a správa vlastních nebo pronajatých nemovitostí;Ostatní domácnosti;CZ0411;')
+2011-10-18 21:29:17,085 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 44 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2511014.html;68611846;Martin Blaha;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;7.6.1999;-;Neuvedeno;Výroba nábytku;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,087 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 45 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3118877.html;71134115;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;4.6.2003;-;Bez zaměstnanců;Překladatelské a tlumočnické činnosti;Ostatní osoby samostatně výdělečně činné;CZ0209;')
+2011-10-18 21:29:17,088 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 46 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2682280.html;70446709;;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;24.5.2000;-;Bez zaměstnanců;Silniční nákladní doprava;Ostatní osoby samostatně výdělečně činné;CZ0634;')
+2011-10-18 21:29:17,107 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 47 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2519813.html;;Mária Gulová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;18.10.1999;-;Bez zaměstnanců;Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona;Ostatní osoby samostatně výdělečně činné;CZ0645;')
+2011-10-18 21:29:17,122 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 48 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2516527.html;68666977;Ing. Soňa Lysá;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;22.3.1999;-;Neuvedeno;Účetnické a auditorské činnosti- daňové poradenství;Ostatní osoby samostatně výdělečně činné;CZ0641;')
+2011-10-18 21:29:17,132 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 49 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2605196.html;69597472;Čestmír Cmíral;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;21.10.1999;-;Neuvedeno;Výroba pilařská a impregnace dřeva;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,134 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 50 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2502689.html;;Magdalena Králová - účetnictví;105 - Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství nezapsaná v obchodním rejstříku;13.7.1998;-;Bez zaměstnanců;Účetnické a auditorské činnosti- daňové poradenství;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,137 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 51 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2513089.html;68632649;Yvona Grossová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;25.11.1998;-;Neuvedeno;Zprostředkování specializovaného velkoobchodu a velkoobchod v zastoupení s ostatními výrobky j. n.;Ostatní osoby samostatně výdělečně činné;CZ0646;')
+2011-10-18 21:29:17,139 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 52 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2686631.html;70513732;Tomáš Kreuz;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;28.7.2000;-;Neuvedeno;Výroba zámků a kování;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,141 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 53 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2498041.html;68475055;Jiří Hladík;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;13.3.2000;-;Neuvedeno;Maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,143 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 54 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2531612.html;68828489;Jitka Svobodová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;15.12.1999;-;Bez zaměstnanců;Kadeřnické, kosmetické a podobné činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,145 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 55 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2690784.html;70562024;Renáta Seidlová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;3.4.2002;-;Bez zaměstnanců;Kadeřnické, kosmetické a podobné činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,146 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 56 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2499851.html;68494050;Ing. Vladan Falta;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;28.4.1999;-;Neuvedeno;Překladatelské a tlumočnické činnosti;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,148 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 57 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2537015.html;68889496;Renáta ŠULCOVÁ;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;25.11.1998;-;Neuvedeno;Účetnické a auditorské činnosti- daňové poradenství;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,149 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 58 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2520666.html;68712642;Zdeněk Rožnovský;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;3.5.1999;-;Bez zaměstnanců;Stravování v restauracích, u stánků a v mobilních zařízeních;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,151 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 59 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2657753.html;70166196;Tomáš Křemenák;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;31.7.2000;-;Neuvedeno;Instalace průmyslových strojů a zařízení;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,153 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 60 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3108373.html;70163375;Ladislav Francouz;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;4.3.2003;-;Neuvedeno;Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,154 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 61 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3093208.html;68746148;Jan Pejša;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;20.1.2003;-;Neuvedeno;Poradenství v oblasti řízení;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,155 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 62 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2586173.html;69390321;Jindřich Štětina;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;31.5.1999;-;Neuvedeno;Demolice a příprava staveniště;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,157 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 63 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2503755.html;68533292;Jaromír Smrž;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;10.5.1999;-;Bez zaměstnanců;Maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;;')
+2011-10-18 21:29:17,158 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 64 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2599544.html;69540683;EVA KOSTKOVÁ;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;21.6.1999;-;Neuvedeno;Ostatní maloobchod v nespecializovaných prodejnách;Ostatní osoby samostatně výdělečně činné;CZ0633;')
+2011-10-18 21:29:17,160 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 65 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2636548.html;69928118;Františka Žídelová;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;22.11.1999;-;Neuvedeno;Ostatní zpracovatelský průmysl j. n.;Ostatní osoby samostatně výdělečně činné;CZ0412;')
+2011-10-18 21:29:17,161 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 66 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2531908.html;68831510;Helena Adámková;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;23.6.1999;-;Bez zaměstnanců;Zprostředkování specializovaného velkoobchodu a velkoobchod v zastoupení s ostatními výrobky j. n.;Ostatní osoby samostatně výdělečně činné;CZ0325;')
+2011-10-18 21:29:17,162 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 67 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2511778.html;68619502;Michal Rella;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;7.12.1998;-;Bez zaměstnanců;Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona;Ostatní osoby samostatně výdělečně činné;CZ0642;')
+2011-10-18 21:29:17,164 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 68 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3370104.html;;Milena Pilská;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;27.9.1999;-;Neuvedeno;Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona;Ostatní osoby samostatně výdělečně činné;CZ0100;')
+2011-10-18 21:29:17,166 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 69 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2542085.html;;Petr Burda;101 - Fyzická osoba podnikající dle živnostenského zákona nezapsaná v obchodním rejstříku;11.1.1999;-;Bez zaměstnanců;Výroba zámků a kování;Ostatní osoby samostatně výdělečně činné;CZ0802;')
+2011-10-18 21:29:17,168 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 70 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2717294.html;;;105 - Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství nezapsaná v obchodním rejstříku;21.11.2000;-;Bez zaměstnanců;Opravy kovodělných výrobků, strojů a zařízení;Ostatní osoby samostatně výdělečně činné;CZ0722;')
+2011-10-18 21:29:17,169 INFO [net.sitina.bp.modules.FinalModule 1] - Processing complete
+2011-10-18 21:54:40,825 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LoopModule, instance # 0
+2011-10-18 21:54:40,925 DEBUG [Thread-1] - module net.sitina.bp.modules.LoopModule, instance # 0 started
+2011-10-18 21:54:40,925 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 0
+2011-10-18 21:54:40,929 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 0 started
+2011-10-18 21:54:40,939 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 1
+2011-10-18 21:54:40,943 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 1 started
+2011-10-18 21:54:40,944 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 0
+2011-10-18 21:54:40,966 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 0 started
+2011-10-18 21:54:40,966 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 1
+2011-10-18 21:54:40,971 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 1 started
+2011-10-18 21:54:40,971 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 2
+2011-10-18 21:54:40,971 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 2 started
+2011-10-18 21:54:40,972 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 3
+2011-10-18 21:54:40,974 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 3 started
+2011-10-18 21:54:40,975 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 0
+2011-10-18 21:54:41,003 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 0 started
+2011-10-18 21:54:41,004 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 1
+2011-10-18 21:54:41,008 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 1 started
+2011-10-18 21:54:41,009 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 2
+2011-10-18 21:54:41,016 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 2 started
+2011-10-18 21:54:41,016 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 3
+2011-10-18 21:54:41,037 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 3 started
+2011-10-18 21:54:41,037 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 0
+2011-10-18 21:54:41,064 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 0 started
+2011-10-18 21:54:41,064 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 1
+2011-10-18 21:54:41,065 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 1 started
+2011-10-18 21:54:41,066 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 2
+2011-10-18 21:54:41,066 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 2 started
+2011-10-18 21:54:41,066 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 3
+2011-10-18 21:54:41,067 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 3 started
+2011-10-18 21:54:41,067 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 4
+2011-10-18 21:54:41,068 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 4 started
+2011-10-18 21:54:41,068 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 5
+2011-10-18 21:54:41,069 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 5 started
+2011-10-18 21:54:41,069 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 6
+2011-10-18 21:54:41,070 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 6 started
+2011-10-18 21:54:41,070 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 7
+2011-10-18 21:54:41,072 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 7 started
+2011-10-18 21:54:41,072 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-18 21:54:41,105 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-18 21:57:48,454 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 1 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2495932.html')
+2011-10-18 22:19:33,258 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LoopModule, instance # 0
+2011-10-18 22:19:33,410 DEBUG [Thread-1] - module net.sitina.bp.modules.LoopModule, instance # 0 started
+2011-10-18 22:19:33,410 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 0
+2011-10-18 22:19:33,417 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 0 started
+2011-10-18 22:19:33,417 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 1
+2011-10-18 22:19:33,423 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 1 started
+2011-10-18 22:19:33,423 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 0
+2011-10-18 22:19:33,450 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 0 started
+2011-10-18 22:19:33,450 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 1
+2011-10-18 22:19:33,454 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 1 started
+2011-10-18 22:19:33,454 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 2
+2011-10-18 22:19:33,455 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 2 started
+2011-10-18 22:19:33,455 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 3
+2011-10-18 22:19:33,459 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 3 started
+2011-10-18 22:19:33,459 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 0
+2011-10-18 22:19:33,482 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 0 started
+2011-10-18 22:19:33,482 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 1
+2011-10-18 22:19:33,486 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 1 started
+2011-10-18 22:19:33,486 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 2
+2011-10-18 22:19:33,491 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 2 started
+2011-10-18 22:19:33,492 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 3
+2011-10-18 22:19:33,501 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 3 started
+2011-10-18 22:19:33,501 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 0
+2011-10-18 22:19:33,534 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 0 started
+2011-10-18 22:19:33,534 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 1
+2011-10-18 22:19:33,546 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 1 started
+2011-10-18 22:19:33,546 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 2
+2011-10-18 22:19:33,552 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 2 started
+2011-10-18 22:19:33,553 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 3
+2011-10-18 22:19:33,556 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 3 started
+2011-10-18 22:19:33,556 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 4
+2011-10-18 22:19:33,567 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 4 started
+2011-10-18 22:19:33,567 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 5
+2011-10-18 22:19:33,591 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 5 started
+2011-10-18 22:19:33,591 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 6
+2011-10-18 22:19:33,592 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 6 started
+2011-10-18 22:19:33,592 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 7
+2011-10-18 22:19:33,593 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 7 started
+2011-10-18 22:19:33,593 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-18 22:19:33,669 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-18 22:23:04,554 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 1 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2494269.html')
+2011-10-18 22:25:27,262 ERROR [net.sitina.bp.modules.FileDownloaderModule 6] - Error during download
+java.lang.Exception: Problem downloading
+	at net.sitina.bp.modules.FileDownloaderModule.download(FileDownloaderModule.java:121)
+	at net.sitina.bp.modules.FileDownloaderModule.download(FileDownloaderModule.java:72)
+	at net.sitina.bp.modules.FileDownloaderModule.process(FileDownloaderModule.java:61)
+	at net.sitina.bp.api.Module.run(Module.java:34)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:258)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:317)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:687)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:632)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:766)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:632)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1195)
+	at net.sitina.bp.modules.FileDownloaderModule.download(FileDownloaderModule.java:111)
+	... 4 more
+2011-10-18 22:25:53,594 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 2 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2492791.html')
+2011-10-18 22:28:25,633 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 3 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2491462.html')
+2011-10-18 22:30:46,668 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 4 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2490140.html')
+2011-10-18 22:33:00,709 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 5 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2488885.html')
+2011-10-18 22:35:11,740 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 6 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2487575.html')
+2011-10-18 22:37:45,816 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 7 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2486291.html')
+2011-10-18 22:41:05,862 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 8 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2485022.html')
+2011-10-18 22:44:14,905 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 9 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2483699.html')
+2011-10-18 22:47:31,950 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 10 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2482408.html')
+2011-10-18 22:51:10,045 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 11 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2481037.html')
+2011-10-18 22:54:32,301 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 12 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2479783.html')
+2011-10-18 22:58:20,423 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 13 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2478455.html')
+2011-10-18 23:01:33,518 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 14 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2477151.html')
+2011-10-18 23:04:50,595 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 15 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2475894.html')
+2011-10-18 23:09:44,753 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 16 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2474542.html')
+2011-10-18 23:15:39,877 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 17 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2473343.html')
+2011-10-18 23:21:51,043 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 18 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2471959.html')
+2011-10-19 20:04:56,271 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LoopModule, instance # 0
+2011-10-19 20:04:56,443 DEBUG [Thread-1] - module net.sitina.bp.modules.LoopModule, instance # 0 started
+2011-10-19 20:04:56,443 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 0
+2011-10-19 20:04:56,445 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 0 started
+2011-10-19 20:04:56,445 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 1
+2011-10-19 20:04:56,446 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 1 started
+2011-10-19 20:04:56,446 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 0
+2011-10-19 20:04:56,449 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 0 started
+2011-10-19 20:04:56,449 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 1
+2011-10-19 20:04:56,451 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 1 started
+2011-10-19 20:04:56,451 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 2
+2011-10-19 20:04:56,452 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 2 started
+2011-10-19 20:04:56,452 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 3
+2011-10-19 20:04:56,458 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 3 started
+2011-10-19 20:04:56,458 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 0
+2011-10-19 20:04:56,531 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 0 started
+2011-10-19 20:04:56,531 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 1
+2011-10-19 20:04:56,557 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 1 started
+2011-10-19 20:04:56,557 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 2
+2011-10-19 20:04:56,577 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 2 started
+2011-10-19 20:04:56,577 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 3
+2011-10-19 20:04:56,582 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 3 started
+2011-10-19 20:04:56,582 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 0
+2011-10-19 20:04:56,641 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 0 started
+2011-10-19 20:04:56,641 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 1
+2011-10-19 20:04:56,645 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 1 started
+2011-10-19 20:04:56,645 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 2
+2011-10-19 20:04:56,647 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 2 started
+2011-10-19 20:04:56,690 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 3
+2011-10-19 20:04:56,692 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 3 started
+2011-10-19 20:04:56,692 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 4
+2011-10-19 20:04:56,693 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 4 started
+2011-10-19 20:04:56,693 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 5
+2011-10-19 20:04:56,694 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 5 started
+2011-10-19 20:04:56,694 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 6
+2011-10-19 20:04:56,701 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 6 started
+2011-10-19 20:04:56,701 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 7
+2011-10-19 20:04:56,705 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 7 started
+2011-10-19 20:04:56,705 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-19 20:04:56,758 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-19 20:06:35,715 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 1 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2470528.html')
+2011-10-19 20:08:21,742 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 2 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2469220.html')
+2011-10-19 20:09:26,815 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 3 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2467909.html')
+2011-10-19 20:10:36,834 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 4 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2466542.html')
+2011-10-19 20:11:47,857 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 5 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2465075.html')
+2011-10-19 20:12:40,874 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 6 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2463731.html')
+2011-10-19 20:13:29,889 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 7 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2462549.html')
+2011-10-19 20:14:34,913 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 8 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2461542.html')
+2011-10-19 20:15:25,942 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 9 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2460279.html')
+2011-10-19 20:16:16,955 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 10 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2459135.html')
+2011-10-19 20:17:03,984 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 11 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2457968.html')
+2011-10-19 20:17:57,015 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 12 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2456668.html')
+2011-10-19 20:18:49,039 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 13 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2455364.html')
+2011-10-19 20:19:42,059 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 14 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2454103.html')
+2011-10-19 20:20:37,077 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 15 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2452879.html')
+2011-10-19 20:21:32,123 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 16 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2451689.html')
+2011-10-19 20:22:26,138 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 17 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2450513.html')
+2011-10-19 20:23:27,183 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 18 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2449171.html')
+2011-10-19 20:24:37,200 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 19 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2447818.html')
+2011-10-19 20:26:03,254 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 20 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2446432.html')
+2011-10-19 20:27:25,483 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 21 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3014449.html')
+2011-10-19 20:28:49,548 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 22 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2443981.html')
+2011-10-19 20:30:42,725 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 23 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2442756.html')
+2011-10-19 20:32:35,989 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 24 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2441511.html')
+2011-10-19 20:34:38,062 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 25 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2440266.html')
+2011-10-19 20:36:40,266 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 26 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2438955.html')
+2011-10-19 20:38:50,327 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 27 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2437732.html')
+2011-10-19 20:41:33,463 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 28 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2436418.html')
+2011-10-19 20:43:49,643 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 29 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2435104.html')
+2011-10-19 20:46:52,570 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 30 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2433847.html')
+2011-10-19 20:50:07,727 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 31 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2432852.html')
+2011-10-19 20:53:43,941 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 32 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2431558.html')
+2011-10-19 20:56:58,397 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 33 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2430287.html')
+2011-10-19 21:00:30,731 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 34 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2428963.html')
+2011-10-19 21:03:34,306 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 35 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2427768.html')
+2011-10-19 21:06:18,855 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 36 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2426600.html')
+2011-10-19 21:08:33,043 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 37 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2425435.html')
+2011-10-19 21:10:32,102 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 38 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2424516.html')
+2011-10-19 21:12:44,324 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 39 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2423271.html')
+2011-10-19 21:14:54,528 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 40 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2421990.html')
+2011-10-19 21:17:10,645 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 41 000 items (last item: '../down/irsw/detail.jsp-prajed_id=3249633.html')
+2011-10-19 21:19:41,763 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 42 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2419284.html')
+2011-10-19 21:22:20,011 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 43 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2417794.html')
+2011-10-19 21:26:24,301 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 44 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2416511.html')
+2011-10-19 21:28:34,428 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 45 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2415332.html')
+2011-10-19 21:30:47,637 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 46 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2414138.html')
+2011-10-19 21:33:15,832 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 47 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2412884.html')
+2011-10-19 21:35:46,886 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 48 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2411581.html')
+2011-10-19 21:38:24,061 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 49 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2410253.html')
+2011-10-19 21:41:01,205 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 50 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2409106.html')
+2011-10-19 21:44:05,367 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 51 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2407630.html')
+2011-10-19 21:47:57,775 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 52 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2406290.html')
+2011-10-19 21:51:10,198 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 53 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2405017.html')
+2011-10-19 21:53:52,343 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 54 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2403935.html')
+2011-10-19 21:56:41,548 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 55 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2402674.html')
+2011-10-19 22:00:24,845 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 56 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2401460.html')
+2011-10-19 22:13:26,535 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LoopModule, instance # 0
+2011-10-19 22:13:26,597 DEBUG [Thread-1] - module net.sitina.bp.modules.LoopModule, instance # 0 started
+2011-10-19 22:13:26,597 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 0
+2011-10-19 22:13:26,600 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 0 started
+2011-10-19 22:13:26,600 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 1
+2011-10-19 22:13:26,601 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 1 started
+2011-10-19 22:13:26,601 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 0
+2011-10-19 22:13:26,607 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 0 started
+2011-10-19 22:13:26,607 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 1
+2011-10-19 22:13:26,608 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 1 started
+2011-10-19 22:13:26,608 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 2
+2011-10-19 22:13:26,618 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 2 started
+2011-10-19 22:13:26,618 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 3
+2011-10-19 22:13:26,637 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 3 started
+2011-10-19 22:13:26,637 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 0
+2011-10-19 22:13:26,665 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 0 started
+2011-10-19 22:13:26,665 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 1
+2011-10-19 22:13:26,676 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 1 started
+2011-10-19 22:13:26,676 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 2
+2011-10-19 22:13:26,693 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 2 started
+2011-10-19 22:13:26,693 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 3
+2011-10-19 22:13:26,694 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 3 started
+2011-10-19 22:13:26,695 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 0
+2011-10-19 22:13:26,793 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 0 started
+2011-10-19 22:13:26,793 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 1
+2011-10-19 22:13:26,803 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 1 started
+2011-10-19 22:13:26,803 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 2
+2011-10-19 22:13:26,805 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 2 started
+2011-10-19 22:13:26,805 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 3
+2011-10-19 22:13:26,806 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 3 started
+2011-10-19 22:13:26,806 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 4
+2011-10-19 22:13:26,806 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 4 started
+2011-10-19 22:13:26,806 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 5
+2011-10-19 22:13:26,807 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 5 started
+2011-10-19 22:13:26,807 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 6
+2011-10-19 22:13:26,807 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 6 started
+2011-10-19 22:13:26,807 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 7
+2011-10-19 22:13:26,813 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 7 started
+2011-10-19 22:13:26,813 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-19 22:13:26,841 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-19 22:14:31,692 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 1 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2399611.html')
+2011-10-20 20:03:33,207 ERROR [main] - test
+2011-10-20 20:03:33,209 DEBUG [main] - test
+2011-10-20 20:03:33,209 INFO [main] - test
+2011-10-20 20:03:33,209 ERROR [main] - test
+2011-10-20 20:03:33,210 FATAL [main] - test
+2011-10-20 20:23:40,024 ERROR [main] - org.htmlparser.util.ParserException: /home/jirka/ws/BatchProcessor/test1 (No such file or directory)
+2011-10-20 20:23:40,028 ERROR [main] - File test1was not moved!
+2011-10-20 20:23:40,030 ERROR [main] - Exception in processing item 'test1'
+java.lang.NullPointerException
+	at net.sitina.bp.modules.CZSOParserModule.prepareStringRepresentation(CZSOParserModule.java:150)
+	at net.sitina.bp.modules.CZSOParserModule.process(CZSOParserModule.java:68)
+	at net.sitina.bp.api.Module.run(Module.java:34)
+	at net.sitina.bp.test.modules.CZSOExtractorTest.testProcess(CZSOExtractorTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.mockito.internal.runners.JUnit45AndHigherRunnerImpl.run(JUnit45AndHigherRunnerImpl.java:37)
+	at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:62)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+2011-10-20 20:23:40,032 INFO [main] - Processing complete
+2011-10-20 20:24:33,315 ERROR [main] - org.htmlparser.util.ParserException: /home/jirka/ws/BatchProcessor/test1 (Adresář nebo soubor neexistuje)
+2011-10-20 20:24:33,327 ERROR [main] - File test1was not moved!
+2011-10-20 20:25:21,385 INFO [main] - Processing complete
+2011-10-20 20:25:39,983 ERROR [main] - org.htmlparser.util.ParserException: /home/jirka/ws/BatchProcessor/test1 (No such file or directory)
+2011-10-20 20:25:39,987 ERROR [main] - File test1was not moved!
+2011-10-20 20:25:39,988 INFO [main] - Processing complete
+2011-10-20 20:37:33,303 INFO [main] - Processing complete
+2011-10-20 20:37:33,318 DEBUG [main] - test
+2011-10-20 20:37:33,318 INFO [main] - test
+2011-10-20 20:37:33,319 ERROR [main] - test
+2011-10-20 20:37:33,319 FATAL [main] - test
+2011-10-20 20:38:01,904 INFO [main] - Processing complete
+2011-10-20 20:38:01,935 DEBUG [main] - test
+2011-10-20 20:38:01,937 INFO [main] - test
+2011-10-20 20:38:01,939 ERROR [main] - test
+2011-10-20 20:38:01,939 FATAL [main] - test
+2011-10-20 20:38:32,112 INFO [main] - Processing complete
+2011-10-20 20:38:32,114 ERROR [main] - test
+2011-10-20 20:38:32,119 DEBUG [main] - test
+2011-10-20 20:38:32,120 INFO [main] - test
+2011-10-20 20:38:32,120 ERROR [main] - test
+2011-10-20 20:38:32,120 FATAL [main] - test
+2011-10-20 20:42:29,776 INFO [main] - Processing complete
+2011-10-20 20:42:29,778 ERROR [main] - test
+2011-10-20 20:42:29,782 DEBUG [main] - test
+2011-10-20 20:42:29,783 INFO [main] - test
+2011-10-20 20:42:29,783 ERROR [main] - test
+2011-10-20 20:42:29,784 FATAL [main] - test
+2011-10-20 20:44:07,845 INFO [main] - Processing complete
+2011-10-20 20:44:07,847 ERROR [main] - test
+2011-10-20 20:44:07,851 INFO [main] - Processing complete
+2011-10-20 20:44:07,851 ERROR [main] - test
+2011-10-20 20:45:25,910 INFO [main] - Processing complete
+2011-10-20 20:45:25,912 ERROR [main] - test
+2011-10-20 20:45:25,916 INFO [main] - Processing complete
+2011-10-20 20:45:25,989 INFO [main] - Processing complete
+2011-10-20 20:46:05,236 INFO [main] - Processing complete
+2011-10-20 20:46:05,238 ERROR [main] - test
+2011-10-20 20:46:05,242 INFO [main] - Processing complete
+2011-10-20 20:46:05,306 INFO [main] - Processing complete
+2011-10-20 20:47:10,603 INFO [main] - Processing complete
+2011-10-20 20:47:10,605 ERROR [main] - test
+2011-10-20 20:47:10,609 INFO [main] - Processing complete
+2011-10-20 20:47:10,671 INFO [main] - Processing complete
+2011-10-20 20:47:27,753 INFO [main] - Processing complete
+2011-10-20 20:47:27,759 INFO [main] - Processing complete
+2011-10-20 20:47:27,826 INFO [main] - Processing complete
+2011-10-20 20:49:47,464 INFO [main] - Processing complete
+2011-10-20 20:50:15,327 INFO [main] - Processing complete
+2011-10-20 20:51:19,559 INFO [main] - Processing complete
+2011-10-20 20:51:42,366 INFO [main] - Processing complete
+2011-10-20 20:52:15,163 INFO [main] - Processing complete
+2011-10-20 20:52:45,105 INFO [main] - Processing complete
+2011-10-20 21:00:59,823 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LoopModule, instance # 0
+2011-10-20 21:00:59,840 DEBUG [Thread-1] - module net.sitina.bp.modules.LoopModule, instance # 0 started
+2011-10-20 21:00:59,840 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 0
+2011-10-20 21:00:59,849 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 0 started
+2011-10-20 21:00:59,849 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.ICOValidatorModule, instance # 1
+2011-10-20 21:00:59,854 DEBUG [Thread-1] - module net.sitina.bp.modules.ICOValidatorModule, instance # 1 started
+2011-10-20 21:00:59,855 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 0
+2011-10-20 21:00:59,870 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 0 started
+2011-10-20 21:00:59,870 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 1
+2011-10-20 21:00:59,872 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 1 started
+2011-10-20 21:00:59,872 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 2
+2011-10-20 21:00:59,872 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 2 started
+2011-10-20 21:00:59,873 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.StringAppenderModule, instance # 3
+2011-10-20 21:00:59,873 DEBUG [Thread-1] - module net.sitina.bp.modules.StringAppenderModule, instance # 3 started
+2011-10-20 21:00:59,873 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 0
+2011-10-20 21:00:59,884 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 0 started
+2011-10-20 21:00:59,884 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 1
+2011-10-20 21:00:59,886 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 1 started
+2011-10-20 21:00:59,886 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 2
+2011-10-20 21:00:59,886 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 2 started
+2011-10-20 21:00:59,886 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.LinksExtractorModule, instance # 3
+2011-10-20 21:00:59,887 DEBUG [Thread-1] - module net.sitina.bp.modules.LinksExtractorModule, instance # 3 started
+2011-10-20 21:00:59,887 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 0
+2011-10-20 21:00:59,888 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 0 started
+2011-10-20 21:00:59,888 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 1
+2011-10-20 21:00:59,889 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 1 started
+2011-10-20 21:00:59,889 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 2
+2011-10-20 21:00:59,889 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 2 started
+2011-10-20 21:00:59,889 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 3
+2011-10-20 21:00:59,889 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 3 started
+2011-10-20 21:00:59,889 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 4
+2011-10-20 21:00:59,890 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 4 started
+2011-10-20 21:00:59,890 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 5
+2011-10-20 21:00:59,890 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 5 started
+2011-10-20 21:00:59,890 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 6
+2011-10-20 21:00:59,891 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 6 started
+2011-10-20 21:00:59,891 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FileDownloaderModule, instance # 7
+2011-10-20 21:00:59,891 DEBUG [Thread-1] - module net.sitina.bp.modules.FileDownloaderModule, instance # 7 started
+2011-10-20 21:00:59,891 DEBUG [Thread-1] - Instantiating module net.sitina.bp.modules.FinalModule, instance # 0
+2011-10-20 21:00:59,892 DEBUG [Thread-1] - module net.sitina.bp.modules.FinalModule, instance # 0 started
+2011-10-20 21:03:09,911 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 1 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2397339.html')
+2011-10-20 21:04:34,936 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 2 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2396054.html')
+2011-10-20 21:05:19,945 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 3 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2394812.html')
+2011-10-20 21:06:17,967 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 4 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2393560.html')
+2011-10-20 21:07:18,983 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 5 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2392070.html')
+2011-10-20 21:08:09,995 INFO [net.sitina.bp.modules.FinalModule 1] - Processed 6 000 items (last item: '../down/irsw/detail.jsp-prajed_id=2390905.html')

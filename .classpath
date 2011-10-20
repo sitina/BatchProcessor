@@ -9,20 +9,9 @@
 	<classpathentry kind="lib" path="lib/derby/derby.war"/>
 	<classpathentry kind="lib" path="lib/derby/derbyclient.jar"/>
 	<classpathentry kind="lib" path="lib/derby/derbyLocale_cs.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_de_DE.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_es.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_fr.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_hu.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_it.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_ja_JP.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_ko_KR.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_pl.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_pt_BR.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_ru.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_zh_CN.jar"/>
-	<classpathentry kind="lib" path="lib/derby/derbyLocale_zh_TW.jar"/>
 	<classpathentry kind="lib" path="lib/derby/derbynet.jar"/>
 	<classpathentry kind="lib" path="lib/derby/derbyrun.jar"/>
 	<classpathentry kind="lib" path="lib/derby/derbytools.jar"/>
+	<classpathentry kind="lib" path="lib/mockito-all-1.8.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
