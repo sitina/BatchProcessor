@@ -21,8 +21,6 @@ import org.xml.sax.InputSource;
 
 public class CZSOExtractor extends Module {
 
-	private String fileName = "CZSO.csv";
-	
 	public CZSOExtractor(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
 		super(in, out, config, instanceNumber);
 		loadConfiguration();
@@ -30,11 +28,6 @@ public class CZSOExtractor extends Module {
 
 	@Override
 	protected void loadConfiguration() {		
-		String loadedFileName = configuration.getStringProperty("fileName");
-		
-		if (loadedFileName != null) {
-			fileName = loadedFileName;
-		}		
 	}
 
 	@Override
@@ -47,6 +40,8 @@ public class CZSOExtractor extends Module {
 				DocumentBuilder builder = factory.newDocumentBuilder();
 				InputSource is = new InputSource( new StringReader( pageContents ) );
 				Document d = builder.parse( is );
+				System.out.println(d);
+				// TODO: finish this
 			}
 		} catch (Exception e) {
 			log.error(e);
