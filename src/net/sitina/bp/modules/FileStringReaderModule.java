@@ -4,14 +4,19 @@ import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
+import net.sitina.bp.api.BatchProcessorException;
 import net.sitina.bp.api.Hub;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
 
+/**
+ * gets file name as input parameter and loads its content into output
+ * 
+ * @author jirka
+ *
+ */
 public class FileStringReaderModule extends Module {
 
 	public FileStringReaderModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
@@ -37,10 +42,8 @@ public class FileStringReaderModule extends Module {
 			while ((line = br.readLine()) != null) {
 				out.putItem(line);
 			}
-		} catch (FileNotFoundException e) {
-			log.error(e);
-		} catch (IOException e) {
-			log.error(e);
+		} catch (Exception e) {
+			throw new BatchProcessorException(this.getClass(), item, e);
 		} finally {
 			try {
 				br.close();
@@ -67,8 +70,6 @@ public class FileStringReaderModule extends Module {
 
 	@Override
 	protected void loadConfiguration() {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

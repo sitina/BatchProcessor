@@ -6,19 +6,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 
+import net.sitina.bp.api.BatchProcessorException;
 import net.sitina.bp.api.Hub;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
 
 public class FileAppenderModule extends Module {
 
+	private static final int MAX_FILE_SIZE = 500 * 1024;
+
 	protected String path = "";
 	
 	protected static String newLine = System.getProperty ("line.separator");
-	
-//	private long itemsProcessed = 0;
-//	
-//	public static final long ITEMS_PER_FILE = 5000;
 
 	public FileAppenderModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
 		super(in, out, config, instanceNumber);
@@ -27,16 +26,18 @@ public class FileAppenderModule extends Module {
 
 	@Override
 	protected void process(String item) {
-//		if ((++itemsProcessed % ITEMS_PER_FILE) == 0) {
-//			loadConfiguration();
-//		}
-		
 		try {
-			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(path), true));
+			File f = new File(path);
+			if (f.exists() && f.length() > MAX_FILE_SIZE) {
+				loadConfiguration();
+				f = new File(path);
+				f.createNewFile();
+			}
+			BufferedWriter bw = new BufferedWriter(new FileWriter(f, true));
 			bw.write(item + newLine);
 			bw.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			throw new BatchProcessorException(this.getClass(), item, e);
 		}
 		
 		out.putItem(item);
@@ -49,6 +50,8 @@ public class FileAppenderModule extends Module {
 			
 			try {
 				File pathFile = new File(path);
+				pathFile.mkdirs();
+				pathFile.delete();
 				pathFile.createNewFile();
 				File pathFileParentDirectory = new File(pathFile.getPath());
 				

@@ -3,7 +3,6 @@ package net.sitina.bp.modules;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Hashtable;
-import java.util.List;
 import java.util.Set;
 
 import net.sitina.bp.api.BatchProcessorException;
@@ -12,19 +11,19 @@ import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
 
 import org.htmlparser.Node;
-import org.htmlparser.NodeFilter;
 import org.htmlparser.Parser;
-import org.htmlparser.filters.TagNameFilter;
+import org.htmlparser.tags.CompositeTag;
 import org.htmlparser.tags.TableColumn;
 import org.htmlparser.util.NodeList;
+import org.htmlparser.util.SimpleNodeIterator;
 
-public class CZSOParserModule extends Module {
+public class CZSOParserModuleBackup extends Module {
 
-	protected List<String> cols = new ArrayList<String>();
+	protected ArrayList<String> cols = new ArrayList<String>();
 
 	private String path = "";
 	
-	public CZSOParserModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
+	public CZSOParserModuleBackup(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
 		super(in, out, config, instanceNumber);
 		loadConfiguration();
 	}
@@ -68,36 +67,48 @@ public class CZSOParserModule extends Module {
 	
 	public void parse(String fileName) throws Exception {
 		Parser parser = new Parser(fileName);
-		NodeFilter nf = new TagNameFilter("td");
-		NodeList list = parser.parse(nf);
-
-		cols = getTableContents(list);
-	}
-	
-	private List<String> getTableContents(NodeList list) {
-		List<String> result = null;
-		
-		for (int i = 0; i < list.size(); i++) {
-			Node node = list.elementAt(i);
-			if (node.getClass() == TableColumn.class) {
-				TableColumn td = (TableColumn)node;
-				result = addLink(result, td.getStringText());	
+		while (parser.elements().hasMoreNodes()) {
+			Node n = parser.elements().nextNode();
+			if (n instanceof CompositeTag) {
+				processNodes(n.getChildren(), 1);
 			}
 		}
-		
+	}
+	
+	private void processNodes(NodeList nodeList, int level) {
+		SimpleNodeIterator it = nodeList.elements(); 
+		while (it.hasMoreNodes()) {
+			Node n = it.nextNode();
+			
+			if (n instanceof TableColumn) {
+				TableColumn tc = (TableColumn)n;
+				cols.add(tc.getChildrenHTML());
+			}
+			
+			if (n instanceof CompositeTag && n.getChildren() != null) {
+				processNodes(n.getChildren(), level + 1);
+			}
+		}
+	}
+	
+	@SuppressWarnings("unused")
+	private String getSpaces(int spaces) {
+		String result = "";
+		for (int i = 0; i < spaces; i++) {
+			result += " ";
+		}
 		return result;
 	}
 	
-	private List<String> addLink(List<String> links, String link) {
-		if (links == null) {
-			links = new ArrayList<String>();
+	@SuppressWarnings("unused")
+	private void printHashTable(Hashtable<String, String> table) {
+		Set<String> keysSet = table.keySet();
+		for (String key : keysSet) {
+			String value = table.get(key);
+			System.out.println(key.replaceAll("\\<[^>]*>","").trim() + " : " + value.replaceAll("\\<[^>]*>","").trim());
 		}
-		
-		links.add(link);
-		
-		return links;
 	}
-
+	
 	private String prepareStringRepresentation(Hashtable<String, String> table) {
 		Set<String> keysSet = table.keySet();
 		String[] resultArray = new String[9];

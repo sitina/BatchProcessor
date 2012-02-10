@@ -35,7 +35,7 @@ public class ModuleConfiguration {
 	}
 	
 	public boolean containsKey(String key) {
-		return properties.containsKey(key);
+		return properties != null && properties.containsKey(key);
 	}
 	
 	public String getStringProperty(String name) {

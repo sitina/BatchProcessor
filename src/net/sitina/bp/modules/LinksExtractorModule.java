@@ -3,24 +3,25 @@ package net.sitina.bp.modules;
 import java.util.Collection;
 import java.util.HashSet;
 
-import org.htmlparser.Node;
-import org.htmlparser.Parser;
-import org.htmlparser.tags.LinkTag;
-import org.htmlparser.util.NodeList;
-import org.htmlparser.util.SimpleNodeIterator;
-
+import net.sitina.bp.api.BatchProcessorException;
 import net.sitina.bp.api.Hub;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
+
+import org.htmlparser.Node;
+import org.htmlparser.NodeFilter;
+import org.htmlparser.Parser;
+import org.htmlparser.filters.TagNameFilter;
+import org.htmlparser.tags.LinkTag;
+import org.htmlparser.util.NodeList;
+import org.htmlparser.util.SimpleNodeIterator;
 
 public class LinksExtractorModule extends Module {
 	
 	protected String sequence = "";
 
-	protected Integer limit;
+	private int notFoundCount = 0;
 	
-	private final Collection<String> links = new HashSet<String>();
-
 	public LinksExtractorModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
 		super(in, out, config, instanceNumber);
 		loadConfiguration();
@@ -30,10 +31,6 @@ public class LinksExtractorModule extends Module {
 	protected void loadConfiguration() {
 		if (configuration.containsKey("sequence")) {
 			sequence =  configuration.getStringProperty("sequence");
-		}
-		
-		if (configuration.containsKey("limit")) {
-			limit = configuration.getIntProperty("limit");
 		}
 	}
 
@@ -45,25 +42,36 @@ public class LinksExtractorModule extends Module {
 		NodeList list = null;
 		try {
 			parser = new Parser(item);
-			list = parser.parse(null);
+			NodeFilter nf = new TagNameFilter("a");
+			list = parser.parse(nf);
 		} catch (Exception e) {
 			try {
 				parser.reset();
-				list = parser.parse(null);
-				log.debug(list.size());
+				NodeFilter nf = new TagNameFilter("a");
+				list = parser.parse(nf);
 			} catch (Exception e2) {
-				e.printStackTrace();
+				throw new BatchProcessorException(this.getClass(), item, e2);
 			}
 		}
 
-		getLinks(list);
+		Collection<String> parseResult = getLinks(list);		
 
-		for (String link : links) {
-			out.putItem(link);
+		if (parseResult != null && parseResult.size() > 0) {
+			for (String link : parseResult) {
+				out.putItem(link);
+			}
+		} else {
+			log.debug("No appropriate links found for url " + item);
+			notFoundCount++;
+			if (notFoundCount == 1000) {
+				notFoundCount = 0;
+				log.error("No appropriate links found for url " + item);
+			}
 		}
 	}
 
-	private void getLinks(NodeList list) {
+	private Collection<String> getLinks(NodeList list) {
+		Collection<String> result = null;
 		SimpleNodeIterator iterator = list.elements();
 		
 		while (iterator.hasMoreNodes()) {
@@ -76,13 +84,22 @@ public class LinksExtractorModule extends Module {
 				log.debug(link);
 				
 				if (link.contains(sequence)) {
-					links.add(link);
+					result = addLink(result, link);
 				}
-
-			} else if (node.getChildren() != null) {
-				getLinks(node.getChildren());
 			}
 		}
+		
+		return result;
+	}
+	
+	private Collection<String> addLink(Collection<String> links, String link) {
+		if (links == null) {
+			links = new HashSet<String>();
+		}
+		
+		links.add(link);
+		
+		return links;
 	}
 
 }

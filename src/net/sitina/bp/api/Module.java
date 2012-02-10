@@ -39,12 +39,14 @@ public abstract class Module extends Observable implements Runnable {
 			} else {
 				try {
 					// log.debug("Nothing to process, waiting");
-					Thread.sleep(1000);
+					Thread.sleep(100);
 				} catch (InterruptedException e) {
 					log.error(e);
 				}
 			}
 		}
+		
+		cleanup();
 		
 		log.info("Processing complete");
 		
@@ -54,5 +56,9 @@ public abstract class Module extends Observable implements Runnable {
 	protected abstract void process(String item);
 	
 	protected abstract void loadConfiguration();
+	
+	protected void cleanup() {
+		// intentionally left blank - to be implemented on childs
+	}
 	
 }

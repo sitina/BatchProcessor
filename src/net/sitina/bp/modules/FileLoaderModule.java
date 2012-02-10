@@ -17,7 +17,7 @@ public class FileLoaderModule extends Module {
 
 	@Override
 	protected void process(String item) {
-		if (path == null) {
+		if (path == null || path.equals("")) {
 			path = item;
 		}
 		

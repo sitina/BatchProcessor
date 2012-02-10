@@ -13,6 +13,7 @@ import org.htmlparser.tags.LinkTag;
 import org.htmlparser.util.NodeList;
 import org.htmlparser.util.SimpleNodeIterator;
 
+import net.sitina.bp.api.BatchProcessorException;
 import net.sitina.bp.api.Hub;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
@@ -41,9 +42,8 @@ public class ImagesExtractorModule extends Module {
 			try {
 				parser.reset();
 				list = parser.parse(null);
-				System.out.print(list.size());
 			} catch (Exception e2) {
-				e.printStackTrace();
+				throw new BatchProcessorException(this.getClass(), item, e2);
 			}
 		}
 

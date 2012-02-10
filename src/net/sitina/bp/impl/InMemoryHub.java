@@ -41,7 +41,7 @@ public class InMemoryHub implements Hub {
 				if (counter++ > SIZE_LIMIT) {
 					while (items.size() > SIZE_LIMIT / 100) {
 						try {
-							Thread.sleep(1000);
+							Thread.sleep(100);
 						} catch (InterruptedException e) {
 							log.error(e);
 						}

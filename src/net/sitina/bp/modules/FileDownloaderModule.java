@@ -11,10 +11,17 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+import net.sitina.bp.api.BatchProcessorException;
 import net.sitina.bp.api.Hub;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
 
+/**
+ * Module that downloads file from supplied parameter
+ * 
+ * @author jirka
+ *
+ */
 public class FileDownloaderModule extends Module {
 
 	protected String storagePath = "";
@@ -24,6 +31,8 @@ public class FileDownloaderModule extends Module {
 	protected String localFileName;
 	
 	protected String extension = "";
+	
+	private static final long TIME_TO_WAIT = 30000;
 	
 	protected ArrayList<String> excluded = new ArrayList<String>();
 	
@@ -60,8 +69,15 @@ public class FileDownloaderModule extends Module {
 		try {
 			out.putItem(download(item));
 		} catch (Exception e) {
-			log.error("Error during download", e);
-			// in.putItem(item);
+			try {
+				// the execution usually falls because of network unreachability
+				// so we try to wait a little bit and give it another try
+				log.error("Exception occured; trying to wait and download again", e);
+				Thread.sleep(TIME_TO_WAIT);
+				out.putItem(download(item));
+			} catch (Exception e1) {
+				throw new BatchProcessorException(this.getClass(), item, e1);
+			}
 		}
 	}
 	
@@ -97,6 +113,7 @@ public class FileDownloaderModule extends Module {
 		
 		File existTest = new File(localCompletePath);
 		if (existTest.exists()) {
+			log.debug("File already exists (filename '" + localCompletePath + "')");
 			return null;
 		}
 		

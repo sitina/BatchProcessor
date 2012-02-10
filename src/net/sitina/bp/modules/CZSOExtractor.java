@@ -12,12 +12,12 @@ import java.net.URLConnection;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.w3c.dom.Document;
-import org.xml.sax.InputSource;
-
 import net.sitina.bp.api.Hub;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
+
+import org.w3c.dom.Document;
+import org.xml.sax.InputSource;
 
 public class CZSOExtractor extends Module {
 
@@ -47,8 +47,6 @@ public class CZSOExtractor extends Module {
 				DocumentBuilder builder = factory.newDocumentBuilder();
 				InputSource is = new InputSource( new StringReader( pageContents ) );
 				Document d = builder.parse( is );
-				System.out.println(d);
-				System.out.println(fileName);
 			}
 		} catch (Exception e) {
 			log.error(e);

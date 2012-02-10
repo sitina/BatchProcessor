@@ -8,11 +8,15 @@ public class BatchProcessor {
 	
 	public static void main(String[] args) {
 		
-		configFile = "config/bpCZSODownload.properties";
-		
+		// configFile = "config/bpCZSODownload.properties";
+
 		// configFile = "config/bpCZSOProcess.properties";
 		
 		// configFile = "config/bpCZSOMergeResults.properties";
+		
+		configFile = "config/bpCZSOSaveResults.properties";
+		
+		// configFile = "config/test.properties";
 		
 		if (args != null && args.length > 0) {
 			configFile = args[0];
