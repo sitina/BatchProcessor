@@ -14,6 +14,8 @@ import net.sitina.bp.api.ModuleConfiguration;
 
 public class CZSODatabaseStorageModule extends Module {
 
+	private static final String CZSO_URL_BASE = "http://registry.czso.cz/irsw/";
+
 	private static final String DATABASE_DRIVER = "databaseDriver";
 
 	private static final String CONNECTION_STRING = "connectionString";
@@ -67,7 +69,11 @@ public class CZSODatabaseStorageModule extends Module {
 			stmt.execute();
 			
 		} catch (Exception e) {
-			out.putItem(e.getMessage() + ";" + item);
+			if (record != null) {
+				out.putItem(e.getMessage() + ";" + record.getUrl().toString());
+			} else {
+				out.putItem(e.getMessage() + ";" + item);
+			}
 			log.error("Error inserting record for item '" + item + "'", e);
 		}
 	}
@@ -105,7 +111,7 @@ public class CZSODatabaseStorageModule extends Module {
 		
 		CZSOStringTokenizer strTok = new CZSOStringTokenizer(input, ";");
 		
-		record.setUrl(getValue(strTok));
+		record.setUrl(updateCZSOURL(getValue(strTok)));
 		record.setCompanyID(getLong(getValue(strTok)));
 		record.setName(getValue(strTok));
 		record.setKind(getValue(strTok));
@@ -121,6 +127,13 @@ public class CZSODatabaseStorageModule extends Module {
 		}
 		
 		return record;
+	}
+	
+	private String updateCZSOURL(String originalURL) {
+		String result = originalURL.substring(originalURL.indexOf("detail"));
+		result = result.replace("-", "?");
+		result = result.replace(".html", "");
+		return CZSO_URL_BASE + result;
 	}
 	
 	private String getValue(CZSOStringTokenizer strTok) {

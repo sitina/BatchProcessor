@@ -9,6 +9,7 @@ import net.sitina.bp.api.Hub;
 
 public class InMemoryHub implements Hub {
 
+	// this size limit means count of items, not their actual size in bytes/whatever else
 	private static final int SIZE_LIMIT = 500000;
 	
 	private static final Logger log = Logger.getLogger(InMemoryHub.class);
