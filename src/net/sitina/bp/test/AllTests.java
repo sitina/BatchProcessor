@@ -1,6 +1,7 @@
 package net.sitina.bp.test;
 
-import net.sitina.bp.test.db.DerbyTest;
+import junit.framework.Test;
+import junit.framework.TestSuite;
 import net.sitina.bp.test.modules.CZSOExtractorTest;
 import net.sitina.bp.test.modules.CZSOParserTest;
 import net.sitina.bp.test.modules.FileAppenderTest;
@@ -14,8 +15,6 @@ import net.sitina.bp.test.modules.LinksExtractorTest;
 import net.sitina.bp.test.modules.LoopModuleTest;
 import net.sitina.bp.test.modules.StringAppenderTest;
 import net.sitina.bp.test.modules.StringDownloaderTest;
-import junit.framework.Test;
-import junit.framework.TestSuite;
 
 public class AllTests {
 
@@ -23,9 +22,6 @@ public class AllTests {
 		TestSuite suite = new TestSuite("Test for net.sitina.bp.test");
 		//$JUnit-BEGIN$
 		suite.addTestSuite(PropertiesConfigurationTest.class);
-		
-		// db
-		suite.addTestSuite(DerbyTest.class);
 		
 		// modules
 		suite.addTestSuite(CZSOExtractorTest.class);
