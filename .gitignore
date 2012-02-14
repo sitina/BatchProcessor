@@ -5,3 +5,4 @@
 bin/*
 /bin*
 testData
+config/cz*.properties
