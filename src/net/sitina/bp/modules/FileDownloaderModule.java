@@ -105,7 +105,12 @@ public class FileDownloaderModule extends Module {
 		
 		this.address = address;
 		this.localFileName = localFileName;
-		String localCompletePath = storagePath + "/" + getFolderName(address) + "/" + localFileName + "." + extension;
+		String localCompletePath;
+		if (extension != null && extension.length() > 0) {
+			localCompletePath = storagePath + "/" + getFolderName(address) + "/" + localFileName + "." + extension;
+		} else {
+			localCompletePath = storagePath + "/" + getFolderName(address) + "/" + localFileName;
+		}
 		File pathTest = new File(storagePath + "/" + getFolderName(address));
 		if (!pathTest.exists()) {
 			pathTest.mkdirs();
