@@ -6,6 +6,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
+import java.util.Map;
+import java.util.TreeMap;
 
 import net.sitina.bp.api.BatchProcessorException;
 import net.sitina.bp.api.Hub;
@@ -35,6 +37,14 @@ public class CZSODatabaseStorageModule extends Module {
 	private String databaseDriver;
 	
 	private Connection connection;
+	
+	private Map<String, Long> kinds;
+	
+	private Map<String, Long> employees;
+	
+	private Map<String, Long> activities;
+	
+	private Map<String, Long> types;
 	
 	public CZSODatabaseStorageModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
 		super(in, out, config, instanceNumber);
@@ -103,7 +113,14 @@ public class CZSODatabaseStorageModule extends Module {
 		if (configuration.containsKey(PASSWORD_PROPERTY)) {
 			password = configuration.getStringProperty(PASSWORD_PROPERTY);
 		}
+
+		kinds = new TreeMap<String, Long>();
 		
+		employees = new TreeMap<String, Long>();
+		
+		activities = new TreeMap<String, Long>();
+		
+		types = new TreeMap<String, Long>();
 	}
 	
 	private CompanyRecord getCompanyRecord(String input) {
@@ -274,6 +291,14 @@ public class CZSODatabaseStorageModule extends Module {
 			String result = text.substring(0, text.indexOf(delimiter));
 			text = text.substring(text.indexOf(delimiter) + 1);
 			return result;
+		}
+	}
+
+	private Long getEmployees(String input) {
+		if (employees.containsKey(input)) {
+			return employees.get(input);
+		} else {
+			return null;
 		}
 	}
 	
