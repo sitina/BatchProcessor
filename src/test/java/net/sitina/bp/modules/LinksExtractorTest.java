@@ -52,6 +52,8 @@ public class LinksExtractorTest extends BatchProcessorTestBase {
 
 	@Override
 	public void testConfiguration() {
+		// check whether load of "sequence" that should be present
+		// in link works
 		fail("not implemented yet");
 	}
 
