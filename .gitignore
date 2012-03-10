@@ -3,7 +3,8 @@
 *.class
 *.log.*
 testData
-/config/bpCZ*.properties
+/config/*.properties
+*.sql
 .*
 target/*
 .classpath
