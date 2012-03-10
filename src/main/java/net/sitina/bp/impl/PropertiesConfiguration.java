@@ -18,17 +18,17 @@ public class PropertiesConfiguration implements Configuration {
 	public static final String PROPERTIES_DELIMITER = ";";
 
 	public static final String KEY_VALUE_DELIMITER = "|";
-	
+
 	protected static Logger log = Logger.getLogger(PropertiesConfiguration.class);
-	
+
 	protected List<ModuleConfiguration> modulesConfiguration = new ArrayList<ModuleConfiguration>();
-	
+
 	protected Properties properties = null;
-	
+
 	public PropertiesConfiguration() {
-		this("config/batchProcessor.properties");
+		this("config/test.properties");
 	}
-	
+
 	public PropertiesConfiguration(String fileName) {
 		properties = new Properties();
 
@@ -39,7 +39,7 @@ public class PropertiesConfiguration implements Configuration {
 			log.error(e);
 		}
 	}
-	
+
 	private void loadModules() {
 		for (int i = 0; i < 1000; i++) {
 			if (properties.getProperty(String.format("bp.modules.%s.class", i)) != null) {
@@ -47,22 +47,22 @@ public class PropertiesConfiguration implements Configuration {
 			}
 		}
 	}
-	
+
 	private ModuleConfiguration loadModuleConfiguration(int moduleIndex) {
 		String modulePropertiesString = properties.getProperty(String.format("bp.modules.%s.properties", moduleIndex));
 		Map<String, String> moduleProperties = loadModuleProperties(modulePropertiesString);
 		String className = properties.getProperty(String.format("bp.modules.%s.class", moduleIndex));
-		int instancesCount = 1; 
-		
-		try {		
+		int instancesCount = 1;
+
+		try {
 			instancesCount = Integer.valueOf(properties.getProperty(String.format("bp.modules.%s.instances", moduleIndex))).intValue();
 		} catch (Exception e) {
 			log.error("Problem setting instances count for module #" + moduleIndex, e);
 		}
-		
+
 		return new ModuleConfiguration(className, instancesCount, moduleProperties);
 	}
-	
+
 	private Map<String, String> loadModuleProperties(String propertiesString) {
 		Map<String, String> result = new HashMap<String, String>();
 
@@ -82,7 +82,7 @@ public class PropertiesConfiguration implements Configuration {
 
 		return result;
 	}
-	
+
 	@Override
 	public List<ModuleConfiguration> getModuleConfigurations() {
 		return modulesConfiguration;

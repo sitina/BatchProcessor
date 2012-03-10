@@ -1,7 +1,6 @@
 package net.sitina.bp.modules;
 
 import java.io.File;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,17 +18,17 @@ public class CZSOParserTest extends BatchProcessorTestBase {
 		in = new InMemoryHub();
 		out = new InMemoryHub();
 		in.setComplete();
-		
+
 		String rootPath = "testData";
-		
+
 		Map<String, String> properties = new HashMap<String, String>();
 		properties.put("path", rootPath);
 
 		config = new ModuleConfiguration("", 1, properties);
-		
+
 		File testItemsPath = new File(rootPath);
 		String[] files = testItemsPath.list();
-		
+
 		for (String file : files) {
 			in.putItem(rootPath + "/" + file);
 		}
@@ -39,29 +38,30 @@ public class CZSOParserTest extends BatchProcessorTestBase {
 		in = new InMemoryHub();
 		out = new InMemoryHub();
 		in.setComplete();
-		
+
 		String rootPath = "testData";
-		
+
 		Map<String, String> properties = new HashMap<String, String>();
 		properties.put("path", rootPath);
 
 		config = new ModuleConfiguration("", 1, properties);
-		
+
 		File testItemsPath = new File(rootPath);
 		String[] files = testItemsPath.list();
-		
+
 		for (String file : files) {
 			for (int i = 0; i < factor; i++) {
 				in.putItem(rootPath + "/" + file);
 			}
 		}
 	}
-	
-	@Test
+
+	@Override
+    @Test
 	public void testProcess() {
 		module = new CZSOParserModule(in, out, config, instanceNumber);
 		runModule(module);
-		
+
 		int itemsCount = 0;
 		String item = null;
 		while ((item = out.getItem()) != null) {
@@ -69,14 +69,14 @@ public class CZSOParserTest extends BatchProcessorTestBase {
 			assertTrue(item.length() > 100);
 			itemsCount++;
 		}
-		
+
 		assertTrue(itemsCount > 0);
 		// assertTrue(itemsCount == 86);
 	}
-	
+
 	@Test
-	public void testProcessOriginal() {
-		module = new CZSOParserModuleBackup(in, out, config, instanceNumber);
+	public void testProcess2() {
+		module = new CZSOParserModule(in, out, config, instanceNumber);
 		runModule(module);
 
 		int itemsCount = 0;
@@ -86,54 +86,19 @@ public class CZSOParserTest extends BatchProcessorTestBase {
 			assertTrue(item.length() > 100);
 			itemsCount++;
 		}
-		
+
 		assertTrue(itemsCount > 0);
-		// assertTrue(itemsCount == 86);
+		assertTrue(itemsCount == 86);
 	}
 
-	@Test
-	public void testProcessIterative() {
-		long start = 0;
-		long finish = 0;
-		int runsCount = 1;
-		int setupFactor = 100;
-
-		for (int i = 0; i < runsCount; i++) {
-			try {
-				setUpExtended(setupFactor);
-				start = new Date().getTime();
-				testProcess();
-				finish = new Date().getTime();
-				System.out.println("New > " + (finish - start) + "ms");
-			} catch (Exception e) {
-				e.printStackTrace();
-				fail();
-			}
-		}
-
-
-		for (int i = 0; i < runsCount; i++) {
-			try {
-				setUpExtended(setupFactor);
-				start = new Date().getTime();
-				testProcessOriginal();
-				finish = new Date().getTime();
-				System.out.println("Original > " + (finish - start) + "ms");
-			} catch (Exception e) {
-				e.printStackTrace();
-				fail();
-			}
-		}
-	}
-	
 	@Override
 	public void testConfiguration() {
 	}
-	
+
 	private void runModule(Module module) {
 		Thread t = new Thread(module);
 		t.start();
-		
+
 		while (t.isAlive()) {
 			try {
 				Thread.sleep(10);

@@ -3,7 +3,6 @@ package net.sitina.bp.modules;
 import net.sitina.bp.BatchProcessorTestBase;
 import net.sitina.bp.api.ModuleConfiguration;
 import net.sitina.bp.impl.InMemoryHub;
-import net.sitina.bp.modules.ICOValidatorModule;
 
 import org.junit.Test;
 
@@ -18,26 +17,27 @@ public class ICOValidatorTest extends BatchProcessorTestBase {
 		module = new ICOValidatorModule(in, out, config, instanceNumber);
 	}
 
-	@Test
+	@Override
+    @Test
 	public void testProcess() {
 		in.putItem("3");
 		in.putItem("44392851");
 		in.putItem("11");
 		in.putItem("2");
-		
+
 		module.run();
-		
+
 		String val = out.getItem();
-		
+
 		assertNotNull(val);
 		assertEquals("44392851", val);
-		
+
 		assertTrue(out.isComplete());
 	}
 
 	@Override
 	public void testConfiguration() {
-		fail("not implemented yet");
+	    // no configuration in this module
 	}
 
 }
