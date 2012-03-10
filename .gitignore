@@ -1,8 +1,10 @@
+.project
 *.log
 *.class
 *.log.*
-/bin/*
-bin/*
-/bin*
 testData
-config/cz*.properties
+/config/*.properties
+*.sql
+.*
+target/*
+.classpath
