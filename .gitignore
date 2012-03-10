@@ -1,8 +1,9 @@
+.project
 *.log
 *.class
 *.log.*
-/bin/*
-bin/*
-/bin*
 testData
 /config/bpCZ*.properties
+.*
+target/*
+.classpath
