@@ -13,13 +13,11 @@ import net.sitina.bp.modules.ICOValidatorTest;
 import net.sitina.bp.modules.ImagesExtractorTest;
 import net.sitina.bp.modules.LinksExtractorTest;
 import net.sitina.bp.modules.LoopModuleTest;
-import net.sitina.bp.modules.StringAppenderTest;
-import net.sitina.bp.modules.StringDownloaderTest;
 
 public class AllTests {
 
 	public static Test suite() {
-		TestSuite suite = new TestSuite("Test for net.sitina.bp.test");
+		TestSuite suite = new TestSuite("Test for net.sitina.bp");
 		//$JUnit-BEGIN$
 		suite.addTestSuite(PropertiesConfigurationTest.class);
 		
@@ -35,8 +33,6 @@ public class AllTests {
 		suite.addTestSuite(ImagesExtractorTest.class);
 		suite.addTestSuite(LinksExtractorTest.class);
 		suite.addTestSuite(LoopModuleTest.class);
-		suite.addTestSuite(StringAppenderTest.class);
-		suite.addTestSuite(StringDownloaderTest.class);		
 		
 		//$JUnit-END$
 		return suite;
