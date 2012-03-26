@@ -6,17 +6,29 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.util.Map;
-import java.util.TreeMap;
 
 import net.sitina.bp.api.BatchProcessorException;
 import net.sitina.bp.api.Hub;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
+import net.sitina.bp.modules.db.MultipleSingletonValueProvider;
+import net.sitina.bp.modules.db.ValueProvider;
 
 public class CZSODatabaseStorageModule extends Module {
 
-	private static final String CZSO_URL_BASE = "http://registry.czso.cz/irsw/";
+	private static final String DATE_PATTERN = "MM.dd.yyyy";
+
+    private static final String REGIONS_TABLE = "regions";
+
+    private static final String TYPES_TABLE = "types";
+
+    private static final String ACTIVITIES_TABLE = "activities";
+
+    private static final String EMPLOYEES_TABLE = "employees";
+
+    private static final String KINDS_TABLE = "kinds";
+
+    private static final String CZSO_URL_BASE = "http://registry.czso.cz/irsw/";
 
 	private static final String DATABASE_DRIVER = "databaseDriver";
 
@@ -38,13 +50,15 @@ public class CZSODatabaseStorageModule extends Module {
 	
 	private Connection connection;
 	
-	private Map<String, Long> kinds;
+    private final ValueProvider<String, Long> kinds;
 	
-	private Map<String, Long> employees;
+    private final ValueProvider<String, Long> employees;
 	
-	private Map<String, Long> activities;
+    private final ValueProvider<String, Long> activities;
 	
-	private Map<String, Long> types;
+    private final ValueProvider<String, Long> types;
+
+    private final ValueProvider<String, Long> regions;
 	
 	public CZSODatabaseStorageModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
 		super(in, out, config, instanceNumber);
@@ -55,6 +69,12 @@ public class CZSODatabaseStorageModule extends Module {
 		} catch (SQLException e) {
 			log.error("Problem connecting to DB", e);
 		}
+
+        kinds = MultipleSingletonValueProvider.getValueProvider(connection, KINDS_TABLE);
+        employees = MultipleSingletonValueProvider.getValueProvider(connection, EMPLOYEES_TABLE);
+        activities = MultipleSingletonValueProvider.getValueProvider(connection, ACTIVITIES_TABLE);
+        types = MultipleSingletonValueProvider.getValueProvider(connection, TYPES_TABLE);
+        regions = MultipleSingletonValueProvider.getValueProvider(connection, REGIONS_TABLE);
 	}
 
 	@Override
@@ -69,12 +89,12 @@ public class CZSODatabaseStorageModule extends Module {
 			stmt.setString(1, record.getUrl());
 			stmt.setLong(2, record.getCompanyID());
 			stmt.setString(3, record.getName());
-			stmt.setString(4, record.getKind());
+            stmt.setLong(4, kinds.getValue(record.getKind()));
 			stmt.setDate(5, record.getRegistration());
-			stmt.setString(6, record.getEmployees());
-			stmt.setString(7, record.getActivity());
-			stmt.setString(8, record.getTypeOfCompany());
-			stmt.setString(9, record.getRegion());
+            stmt.setLong(6, employees.getValue(record.getEmployees()));
+            stmt.setLong(7, activities.getValue(record.getActivity()));
+            stmt.setLong(8, types.getValue(record.getTypeOfCompany()));
+            stmt.setLong(9, regions.getValue(record.getRegion()));
 			
 			stmt.execute();
 			
@@ -113,14 +133,6 @@ public class CZSODatabaseStorageModule extends Module {
 		if (configuration.containsKey(PASSWORD_PROPERTY)) {
 			password = configuration.getStringProperty(PASSWORD_PROPERTY);
 		}
-
-		kinds = new TreeMap<String, Long>();
-		
-		employees = new TreeMap<String, Long>();
-		
-		activities = new TreeMap<String, Long>();
-		
-		types = new TreeMap<String, Long>();
 	}
 	
 	private CompanyRecord getCompanyRecord(String input) {
@@ -163,7 +175,7 @@ public class CZSODatabaseStorageModule extends Module {
 	
 	private Date getDate(String date) {
 		try {
-			SimpleDateFormat sdf = new SimpleDateFormat("MM.dd.yyyy");
+			SimpleDateFormat sdf = new SimpleDateFormat(DATE_PATTERN);
 			return new Date(sdf.parse(date).getTime());
 		} catch (Exception e) {
 			return null;
@@ -276,7 +288,7 @@ public class CZSODatabaseStorageModule extends Module {
 		
 		private String text;
 		
-		private String delimiter;
+		private final String delimiter;
 		
 		public CZSOStringTokenizer(String text, String delimiter) {
 			this.text = text;
@@ -291,14 +303,6 @@ public class CZSODatabaseStorageModule extends Module {
 			String result = text.substring(0, text.indexOf(delimiter));
 			text = text.substring(text.indexOf(delimiter) + 1);
 			return result;
-		}
-	}
-
-	private Long getEmployees(String input) {
-		if (employees.containsKey(input)) {
-			return employees.get(input);
-		} else {
-			return null;
 		}
 	}
 	

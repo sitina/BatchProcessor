@@ -1,4 +1,4 @@
-package net.sitina.bp.modules.db;
+package net.sitina.bp.modules.cache;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.CancellationException;
@@ -6,6 +6,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
+
+import net.sitina.bp.modules.db.ValueProvider;
 
 /**
  * cache solution implemented according to example in Java Concurrency in

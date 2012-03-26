@@ -22,10 +22,12 @@ public class ModulesRunner extends Thread {
 	protected List<Thread> threadList = new ArrayList<Thread>();
 	
 	public static void main(String[] args) {
-		Configuration c = new PropertiesConfiguration();
+        Configuration c;
 		
 		if (args != null && args.length > 0) {
 			c = new PropertiesConfiguration(args[0]);
+        } else {
+            c = new PropertiesConfiguration();
 		}
 		
 		ModulesRunner mr = new ModulesRunner(c);
@@ -36,7 +38,8 @@ public class ModulesRunner extends Thread {
 		this.config = config;
 	}
 	
-	public void run() {
+	@Override
+    public void run() {
 		List<ModuleConfiguration> moduleConfigurations = config.getModuleConfigurations();
 		
 		Hub inHub = getHubInstance();

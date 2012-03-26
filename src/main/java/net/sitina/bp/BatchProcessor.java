@@ -14,11 +14,11 @@ public class BatchProcessor {
 		
 		// configFile = "config/bpCZSOMergeResults.properties";
 		
-		// configFile = "config/bpCZSOSaveResults.properties";
+        configFile = "config/bpCZSOSaveResults.properties";
 		
 		// configFile = "config/test.properties";
 		
-		configFile = "config/gjwhf.properties";
+        // configFile = "config/gjwhf.properties";
 		
 		if (args != null && args.length > 0) {
 			configFile = args[0];

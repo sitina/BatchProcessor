@@ -30,6 +30,16 @@ public class DatabaseValueProvider implements ValueProvider<String, Long> {
 		this.connection = connection;
 		selectQuery = "SELECT " + idField + " FROM " + tableName + " WHERE " + valueField + " = ?";
 		insertQuery = "INSERT INTO " + tableName + " (" + valueField + ") values (?)";
+        String createQuery = "CREATE TABLE IF NOT EXISTS " + tableName + " (`id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, `value` varchar(200) DEFAULT NULL, PRIMARY KEY (`id`), UNIQUE KEY `valueIndex` (`value`)) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;";
+        
+        try {
+            PreparedStatement stmt = connection.prepareStatement(createQuery);
+            stmt.execute();
+            log.debug("Sucessfully created/updated table " + tableName + ".");
+        } catch (SQLException e) {
+            log.error("Unable to create/check state of necessary table. Ending module.", e);
+            throw new IllegalStateException("Unable to create/check state of necessary table. Ending module.");
+        }
 	}
 
 	
@@ -69,12 +79,15 @@ public class DatabaseValueProvider implements ValueProvider<String, Long> {
 		PreparedStatement stmt = connection.prepareStatement(insertQuery);
 		stmt.setString(1, key);
 		
-		if (stmt.execute() && stmt.getMoreResults()) {
-			ResultSet rs = stmt.getResultSet();
-			return rs.getLong(0);
-		} else {
-			return findValue(key);
+		try {
+            if (stmt.execute() && stmt.getMoreResults()) {
+                ResultSet rs = stmt.getResultSet();
+                return rs.getLong(0);
+            }
+		} catch (Exception e) {
+            log.error("Error inserting value '" + key + "' with query '" + insertQuery + "'.", e);
 		}
+		return findValue(key);
 	}
 
 }
