@@ -15,7 +15,7 @@ import org.apache.log4j.Logger;
 
 public class PropertiesConfiguration implements Configuration {
 
-	public static final String PROPERTIES_DELIMITER = ";";
+	public static final String PROPERTIES_DELIMITER = "^";
 
 	public static final String KEY_VALUE_DELIMITER = "|";
 	

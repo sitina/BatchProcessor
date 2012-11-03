@@ -102,6 +102,7 @@ public class FileDownloaderModule extends Module {
 		}
 		
 		localFileName = localFileName.replace('?', '-');
+		localFileName = localFileName.replace('=', '-');
 		
 		this.address = address;
 		this.localFileName = localFileName;
