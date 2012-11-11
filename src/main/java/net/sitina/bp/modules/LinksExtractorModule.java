@@ -36,6 +36,9 @@ public class LinksExtractorModule extends Module {
 
 	@Override
 	protected void process(String item) {
+	    
+	    String info = item.substring(item.indexOf("#") + 1);
+	    
 		log.debug("Getting links from " + item);
 		Parser parser = null;
 		
@@ -46,6 +49,7 @@ public class LinksExtractorModule extends Module {
 			list = parser.parse(nf);
 		} catch (Exception e) {
 			try {
+			    parser = new Parser(item);
 				parser.reset();
 				NodeFilter nf = new TagNameFilter("a");
 				list = parser.parse(nf);
@@ -58,7 +62,7 @@ public class LinksExtractorModule extends Module {
 
 		if (parseResult != null && parseResult.size() > 0) {
 			for (String link : parseResult) {
-				out.putItem(link);
+				out.putItem(link + "#" + info);
 			}
 		} else {
 			log.debug("No appropriate links found for url " + item);

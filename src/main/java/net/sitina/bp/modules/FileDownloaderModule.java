@@ -66,26 +66,28 @@ public class FileDownloaderModule extends Module {
 
 	@Override
 	protected void process(String item) {		
+	    String name = item.substring(item.indexOf("#") + 1);
+	    name = name.replace("+", "-");
 		try {
-			out.putItem(download(item));
+			out.putItem(downloadA(item, name));
 		} catch (Exception e) {
 			try {
 				// the execution usually falls because of network unreachability
 				// so we try to wait a little bit and give it another try
 				log.error("Exception occured; trying to wait and download again", e);
 				Thread.sleep(TIME_TO_WAIT);
-				out.putItem(download(item));
+				out.putItem(downloadA(item, name));
 			} catch (Exception e1) {
 				throw new BatchProcessorException(this.getClass(), item, e1);
 			}
 		}
 	}
 	
-	private String download(String address) throws Exception {
+	private String downloadA(String address, String name) throws Exception {
 		int lastSlashIndex = address.lastIndexOf('/');
 		int firstQuote = java.lang.Math.max(address.indexOf('?'), address.length());
 		if (lastSlashIndex >= 0 && lastSlashIndex < address.length() - 1) {
-			return download(address, address.substring(lastSlashIndex + 1, firstQuote));
+			return download(address, address.substring(lastSlashIndex + 1, firstQuote), name);
 		} else {
 			log.error("Could not figure out local file name for " + address);
 		}
@@ -93,8 +95,10 @@ public class FileDownloaderModule extends Module {
 		return null;
 	}
 	
-	private String download(String address, String localFileName) throws Exception {
+	private String download(String address, String localFileName, String name) throws Exception {
 		
+	       
+	    
 		for (int i = 0; i < excluded.size(); i++) {
 			if (localFileName.contains(excluded.get(i))) {
 				return null;
@@ -108,11 +112,11 @@ public class FileDownloaderModule extends Module {
 		this.localFileName = localFileName;
 		String localCompletePath;
 		if (extension != null && extension.length() > 0) {
-			localCompletePath = storagePath + "/" + getFolderName(address) + "/" + localFileName + "." + extension;
+			localCompletePath = storagePath + "/" + name + "/" + getFolderName(address) + "/" + localFileName + "." + extension;
 		} else {
-			localCompletePath = storagePath + "/" + getFolderName(address) + "/" + localFileName;
+			localCompletePath = storagePath + "/" + name + "/" + getFolderName(address) + "/" + localFileName;
 		}
-		File pathTest = new File(storagePath + "/" + getFolderName(address));
+		File pathTest = new File(storagePath + "/" + name + "/" + getFolderName(address));
 		if (!pathTest.exists()) {
 			pathTest.mkdirs();
 		}

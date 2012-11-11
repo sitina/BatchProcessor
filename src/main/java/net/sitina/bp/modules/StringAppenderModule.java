@@ -23,7 +23,8 @@ public class StringAppenderModule extends Module {
 	@Override
 	protected void process(String item) {
 		try {
-			out.putItem(String.format(pattern, item));
+		    item = item.replace(" ", "+");
+			out.putItem(String.format(pattern, item, item));
 		} catch (Exception e) {
 			out.putItem(item);
 		}

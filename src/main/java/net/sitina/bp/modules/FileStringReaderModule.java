@@ -40,7 +40,7 @@ public class FileStringReaderModule extends Module {
 			br = new BufferedReader(isr);
 			String line = null;
 			while ((line = br.readLine()) != null) {
-				out.putItem(line);
+				out.putItem(line.trim());
 			}
 		} catch (Exception e) {
 			throw new BatchProcessorException(this.getClass(), item, e);

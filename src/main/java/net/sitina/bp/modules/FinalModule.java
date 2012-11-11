@@ -27,6 +27,7 @@ public class FinalModule extends Module {
 
 	@Override
 	protected void process(String item) {
+	    log.info(item);
 		if ((++count % logAmount) == 0) {
 			count = 0;
 			log.info("Processed "+ (++processed * logAmount) +" items (last item: '" + item + "')");
