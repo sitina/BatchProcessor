@@ -1,15 +1,14 @@
 package net.sitina.bp.modules;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import net.sitina.bp.BatchProcessorTestBase;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
 import net.sitina.bp.impl.InMemoryHub;
-
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class LinksExtractorTest extends BatchProcessorTestBase {
 
@@ -51,7 +50,7 @@ public class LinksExtractorTest extends BatchProcessorTestBase {
 		    count++;
 		}
 
-		assertEquals(859, count);
+		assertEquals(1352, count);
 	}
 
 	@Override

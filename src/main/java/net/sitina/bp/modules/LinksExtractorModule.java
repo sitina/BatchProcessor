@@ -1,13 +1,9 @@
 package net.sitina.bp.modules;
 
-import java.util.Collection;
-import java.util.HashSet;
-
 import net.sitina.bp.api.BatchProcessorException;
 import net.sitina.bp.api.Hub;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
-
 import org.htmlparser.Node;
 import org.htmlparser.NodeFilter;
 import org.htmlparser.Parser;
@@ -16,12 +12,15 @@ import org.htmlparser.tags.LinkTag;
 import org.htmlparser.util.NodeList;
 import org.htmlparser.util.SimpleNodeIterator;
 
+import java.util.Collection;
+import java.util.HashSet;
+
 public class LinksExtractorModule extends Module {
-	
-	protected String sequence = "";
+
+    protected String sequence = "";
 
 	private int notFoundCount = 0;
-	
+
 	public LinksExtractorModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
 		super(in, out, config, instanceNumber);
 		loadConfiguration();
