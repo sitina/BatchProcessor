@@ -8,22 +8,23 @@ import net.sitina.bp.api.ModuleConfiguration;
 import net.sitina.bp.impl.InMemoryHub;
 import org.junit.Test;
 
-public class InsolvencyFilesParserTest extends BatchProcessorTestBase {
+public class BusinessRegistryParserModuleTest extends BatchProcessorTestBase {
+
+    private static final String INPUT = "'https://isir.justice.cz/isir/ueu/evidence_upadcu_detail.do?id=bb927bab-e0a7-421f-ac83-5fc69f4f6c4a','Václav Dušek','25865366','24.09.2008','Sdělení','https://isir.justice.cz/isir/doc/dokument.PDF?id=166679'";
 
     @Override
     public void setUp() throws Exception {
         in = new InMemoryHub();
         in.setComplete();
         out = new InMemoryHub();
-        moduleProperties.put("sequence", "aaa");
-        config = new ModuleConfiguration("ICOValidatorModule", 1, moduleProperties);
-        module = new InsolvencyFilesParserModule(in, out, config, instanceNumber);
+        config = new ModuleConfiguration("BusinessRegistryParserModule", 1, moduleProperties);
+        module = new BusinessRegistryParserModule(in, out, config, instanceNumber);
     }
 
     @Override
     @Test
     public void testProcess() {
-        in.putItem("/Users/Jirka/Documents/workspace/BatchProcessor/testData/insolvencyModuleTest.html");
+        in.putItem(INPUT);
 
         module.run();
 

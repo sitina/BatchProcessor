@@ -39,7 +39,9 @@ public class InsolvencyParserTest {
 
         NodeFilter icoFilter = new AndFilter(new AndFilter(new HasSiblingFilter(new HasChildFilter(new RegexFilter(".*IČ:.*"))), new NodeClassFilter(TableColumn.class)), new HasChildFilter(new NodeClassFilter(LinkTag.class)));
         NodeList icoNodes = parser.parse(icoFilter);
-        String ico = getICO(icoNodes.elementAt(0).toHtml());
+        String icoHtml = icoNodes.elementAt(0).toHtml();
+        String ico = getICO(icoHtml);
+        String businessRegistryLink = getBusinessRegistryLink(icoHtml);
         log.error("ico: " + ico);
         parser.reset();
 
@@ -131,6 +133,11 @@ public class InsolvencyParserTest {
             return matcher.group(1).trim();
         }
 
+        return null;
+    }
+
+    private String getBusinessRegistryLink(String input) {
+        // https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?nazev=&ic=
         return null;
     }
 

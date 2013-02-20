@@ -97,6 +97,10 @@ public class InsolvencyFilesParserModule extends Module {
 
         String dateString = stripSpan(date.toHtml());
         String documentTypeString = stripSpan(documentType.toHtml());
+        documentTypeString = documentTypeString.replaceAll("\\s+", " ");
+        documentTypeString = documentTypeString.replaceAll("</span>", "");
+        documentTypeString = documentTypeString.replaceAll("<br >", "");
+        documentTypeString = documentTypeString.replaceAll("<span class='' >", "");
         String documentLinkString = sequence + getLinkTarget(documentLink.toHtml());
 
 //        log.error("link: '" + link + "'");
@@ -109,13 +113,13 @@ public class InsolvencyFilesParserModule extends Module {
         StringBuilder result = new StringBuilder("'");
         result.append(link);
         result.append("','");
-        result.append(name);
+        result.append(name.replace(",", "."));
         result.append("','");
         result.append(ico);
         result.append("','");
         result.append(dateString);
         result.append("','");
-        result.append(documentTypeString);
+        result.append(documentTypeString.replace(",", "."));
         result.append("','");
         result.append(documentLinkString);
         result.append("'");
