@@ -1,19 +1,19 @@
 package net.sitina.bp.modules;
 
+import net.sitina.bp.api.BatchProcessorException;
+import net.sitina.bp.api.Hub;
+import net.sitina.bp.api.Module;
+import net.sitina.bp.api.ModuleConfiguration;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 
-import net.sitina.bp.api.BatchProcessorException;
-import net.sitina.bp.api.Hub;
-import net.sitina.bp.api.Module;
-import net.sitina.bp.api.ModuleConfiguration;
-
 public class FileAppenderModule extends Module {
 
-	private static final int MAX_FILE_SIZE = 500 * 1024;
+	private static final int MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 
 	protected String path = "";
 	
