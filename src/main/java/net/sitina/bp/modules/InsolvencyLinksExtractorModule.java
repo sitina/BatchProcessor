@@ -68,6 +68,7 @@ public class InsolvencyLinksExtractorModule extends Module {
         if (ico.length() > 0) {
             String result = sequence + link;
             result = result.replace("&#61;", "=");
+            result += "&actSheet=P&pageA=all&pageB=all&pageC=all&pageD=all&pageP=all";
             out.putItem(result);
         }
     }
