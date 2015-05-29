@@ -20,7 +20,11 @@ public class BatchProcessor {
 		
 		// configFile = "config/gjwhf.properties";
 
-        configFile = "/users/Jirka/Documents/workspace/BatchProcessor/config/insolvency.properties";
+        // configFile = "/users/Jirka/Documents/workspace/BatchProcessor/config/insolvency.properties";
+
+        // configFile = "/users/Jirka/Documents/workspace/BatchProcessor/config/insolvency_errors.properties";
+
+        configFile = "/users/Jirka/Documents/workspace/BatchProcessor/config/insolvency_cleanup.properties";
 		
 		if (args != null && args.length > 0) {
 			configFile = args[0];

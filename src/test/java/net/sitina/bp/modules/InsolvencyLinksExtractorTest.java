@@ -11,11 +11,16 @@ import org.htmlparser.filters.HasChildFilter;
 import org.htmlparser.filters.LinkRegexFilter;
 import org.htmlparser.tags.TableRow;
 import org.htmlparser.util.NodeList;
+import org.htmlparser.util.ParserException;
 import org.htmlparser.util.SimpleNodeIterator;
+import org.junit.Assert;
 import org.junit.Test;
 
+import java.net.UnknownHostException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static org.junit.Assert.fail;
 
 public class InsolvencyLinksExtractorTest {
 
@@ -25,11 +30,19 @@ public class InsolvencyLinksExtractorTest {
 
     @Test
     public void testFindLinks() throws Exception {
-        Parser parser = new Parser(SOURCE);
+        try {
+            Parser parser = new Parser(SOURCE);
 
-        NodeFilter rowNodesFilter = new HasChildFilter(new HasChildFilter(new LinkRegexFilter(".*evidence_upadcu_detail.do.*")));
-        NodeList insolvencyRows = parser.parse(rowNodesFilter);
-        listNodes(insolvencyRows);
+            NodeFilter rowNodesFilter = new HasChildFilter(new HasChildFilter(new LinkRegexFilter(".*evidence_upadcu_detail.do.*")));
+            NodeList insolvencyRows = parser.parse(rowNodesFilter);
+            listNodes(insolvencyRows);
+        } catch (ParserException e) {
+            if (!(e.getThrowable() instanceof UnknownHostException)) {
+                fail(e.getMessage());
+            } else {
+                log.error("Test skipped cause of lack of Internet connectivity");
+            }
+        }
     }
 
     private void listNodes(NodeList list) {

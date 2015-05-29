@@ -6,7 +6,11 @@ package net.sitina.bp.modules;
 import net.sitina.bp.BatchProcessorTestBase;
 import net.sitina.bp.api.ModuleConfiguration;
 import net.sitina.bp.impl.InMemoryHub;
+import org.htmlparser.util.ParserException;
+import org.junit.Assert;
 import org.junit.Test;
+
+import java.net.UnknownHostException;
 
 public class InsolvencyFilesParserModuleTest extends BatchProcessorTestBase {
 

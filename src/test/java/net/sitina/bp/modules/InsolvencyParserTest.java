@@ -12,12 +12,17 @@ import org.htmlparser.tags.LinkTag;
 import org.htmlparser.tags.TableColumn;
 import org.htmlparser.tags.TableRow;
 import org.htmlparser.util.NodeList;
+import org.htmlparser.util.ParserException;
 import org.htmlparser.util.SimpleNodeIterator;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.net.UnknownHostException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static junit.framework.Assert.assertNotNull;
+import static org.junit.Assert.fail;
 
 public class InsolvencyParserTest {
 
@@ -27,28 +32,37 @@ public class InsolvencyParserTest {
 
     @Test
     public void testProcessDocument() throws Exception {
-        Parser parser = new Parser(SOURCE);
+        try {
+            Parser parser = new Parser(SOURCE);
 
-        NodeFilter nameFilter = new AndFilter(new HasSiblingFilter(new HasChildFilter(new RegexFilter(".*Jméno/název:.*"))), new NodeClassFilter(TableColumn.class));
-        NodeList nameNodes = parser.parse(nameFilter);
-        String name = getName(nameNodes);
-        log.error("name: " + name);
-        parser.reset();
+            NodeFilter nameFilter = new AndFilter(new HasSiblingFilter(new HasChildFilter(new RegexFilter(".*Jméno/název:.*"))), new NodeClassFilter(TableColumn.class));
+            NodeList nameNodes = parser.parse(nameFilter);
+            String name = getName(nameNodes);
+            log.error("name: " + name);
+            parser.reset();
 
-        log.error("*****************");
+            log.error("*****************");
 
-        NodeFilter icoFilter = new AndFilter(new AndFilter(new HasSiblingFilter(new HasChildFilter(new RegexFilter(".*IČ:.*"))), new NodeClassFilter(TableColumn.class)), new HasChildFilter(new NodeClassFilter(LinkTag.class)));
-        NodeList icoNodes = parser.parse(icoFilter);
-        String icoHtml = icoNodes.elementAt(0).toHtml();
-        String ico = getICO(icoHtml);
-        String businessRegistryLink = getBusinessRegistryLink(icoHtml);
-        log.error("ico: " + ico);
-        parser.reset();
+            NodeFilter icoFilter = new AndFilter(new AndFilter(new HasSiblingFilter(new HasChildFilter(new RegexFilter(".*IČ:.*"))), new NodeClassFilter(TableColumn.class)), new HasChildFilter(new NodeClassFilter(LinkTag.class)));
+            NodeList icoNodes = parser.parse(icoFilter);
+            String icoHtml = icoNodes.elementAt(0).toHtml();
+            String ico = getICO(icoHtml);
+            String businessRegistryLink = getBusinessRegistryLink(icoHtml);
+            assertNotNull(businessRegistryLink);
+            log.error("ico: " + ico);
+            parser.reset();
 
-        NodeFilter documentsFilter = new AndFilter(new HasChildFilter(new HasChildFilter(new LinkRegexFilter("/isir/doc/.*"))), new NodeClassFilter(TableRow.class));
-        NodeList documentsList = parser.parse(documentsFilter);
-        listDocuments(documentsList);
-        parser.reset();
+            NodeFilter documentsFilter = new AndFilter(new HasChildFilter(new HasChildFilter(new LinkRegexFilter("/isir/doc/.*"))), new NodeClassFilter(TableRow.class));
+            NodeList documentsList = parser.parse(documentsFilter);
+            listDocuments(documentsList);
+            parser.reset();
+        } catch (ParserException e) {
+            if (!(e.getThrowable() instanceof UnknownHostException)) {
+                fail(e.getMessage());
+            } else {
+                log.error("Test skipped cause of lack of Internet connectivity");
+            }
+        }
     }
 
     private String getName(NodeList list) {
