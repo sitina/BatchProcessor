@@ -1,25 +1,21 @@
 package net.sitina.bp.modules.mxgp;
 
+import net.sitina.bp.BatchProcessorTestBase;
+import net.sitina.bp.api.ModuleConfiguration;
+import net.sitina.bp.impl.InMemoryHub;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.message.BasicNameValuePair;
 import org.junit.Test;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
-import static org.junit.Assert.*;
-
-public class MXGPModuleTest {
+public class MXGPModuleTest extends BatchProcessorTestBase {
 
     private final String USER_AGENT = "Mozilla/5.0";
 
@@ -82,8 +78,11 @@ public class MXGPModuleTest {
 
         HttpResponse response = client.execute(request);
 
+        int statusCode = response.getStatusLine().getStatusCode();
+        assertEquals(200, statusCode);
+
         System.out.println("Response Code : "
-                + response.getStatusLine().getStatusCode());
+                + statusCode);
 
         BufferedReader rd = new BufferedReader(
                 new InputStreamReader(response.getEntity().getContent()));
@@ -99,5 +98,33 @@ public class MXGPModuleTest {
         assertNotNull(result.toString());
     }
 
+    @Override
+    public void setUp() throws Exception {
+        in = new InMemoryHub();
+        in.setComplete();
+        out = new InMemoryHub();
+        moduleProperties.put("positions", "1");
+        config = new ModuleConfiguration("MXGPModule", 1, moduleProperties);
+        module = new MXGPModule(in, out, config, instanceNumber);
+    }
+
+    @Override
+    public void testProcess() {
+
+    }
+
+    @Override
+    public void testConfiguration() {
+
+    }
+
+    @Test
+    public void getSomeSpecificResults() throws Exception {
+        MXGPModule mxgpModule = (MXGPModule)module;
+        String resultsAsHtml = mxgpModule.getResultsAsHtml(2015, 1, MXGPModule.Category.MXGP, MXGPModule.RaceType.RACE_2, MXGPModule.ResultType.CLASSIFICATION);
+        assertNotNull(resultsAsHtml);
+        System.out.println("String resultsAsHtml = mxgpModule.getResultsAsHtml(2015, 1, MXGPModule.Category.MXGP, MXGPModule.RaceType.RACE_2, MXGPModule.ResultType.CLASSIFICATION);");
+        System.out.println(resultsAsHtml);
+    }
 
 }
