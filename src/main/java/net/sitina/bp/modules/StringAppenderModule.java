@@ -6,27 +6,27 @@ import net.sitina.bp.api.ModuleConfiguration;
 
 public class StringAppenderModule extends Module {
 
-	protected String pattern = "";
-	
-	public StringAppenderModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
-		super(in, out, config, instanceNumber);
-		loadConfiguration();
-	}
+    protected String pattern = "";
 
-	@Override
-	protected void loadConfiguration() {
-		if (configuration.containsKey("pattern")) {
-			pattern = configuration.getStringProperty("pattern");
-		}
-	}
+    public StringAppenderModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
+        super(in, out, config, instanceNumber);
+        loadConfiguration();
+    }
 
-	@Override
-	protected void process(String item) {
-		try {
-			out.putItem(String.format(pattern, item));
-		} catch (Exception e) {
-			out.putItem(item);
-		}
-	}
+    @Override
+    protected void loadConfiguration() {
+        if (configuration.containsKey("pattern")) {
+            pattern = configuration.getStringProperty("pattern");
+        }
+    }
+
+    @Override
+    protected void process(String item) {
+        try {
+            out.putItem(String.format(pattern, item));
+        } catch (Exception e) {
+            out.putItem(item);
+        }
+    }
 
 }

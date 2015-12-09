@@ -11,34 +11,34 @@ import net.sitina.bp.util.BPStringTokenizer;
 
 public class StartModule extends Module {
 
-	private static final String START_ITEMS = "startItems";
-	private static final String DELIMITER = ",";
-	
-	@ModuleParameter(required=true, description="list of items to be processed further on")
-	private List<String> startItems;
-	
-	public StartModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
-		super(in, out, config, instanceNumber);
-		loadConfiguration();
-	}
+    private static final String START_ITEMS = "startItems";
+    private static final String DELIMITER = ",";
 
-	@Override
-	protected void process(String item) {
-		for (String itm : startItems) {
-			out.putItem(itm);
-		}
-	}
+    @ModuleParameter(required = true, description = "list of items to be processed further on")
+    private List<String> startItems;
 
-	@Override
-	protected void loadConfiguration() {
-		startItems = new ArrayList<String>();
-		
-		String tmp = configuration.getStringProperty(START_ITEMS);
-		BPStringTokenizer strTok = new BPStringTokenizer(tmp, DELIMITER);
-		
-		while (strTok.hasMoreTokens()) {
-			startItems.add(strTok.nextToken());
-		}
-	}
+    public StartModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
+        super(in, out, config, instanceNumber);
+        loadConfiguration();
+    }
+
+    @Override
+    protected void process(String item) {
+        for (String itm : startItems) {
+            out.putItem(itm);
+        }
+    }
+
+    @Override
+    protected void loadConfiguration() {
+        startItems = new ArrayList<>();
+
+        String tmp = configuration.getStringProperty(START_ITEMS);
+        BPStringTokenizer strTok = new BPStringTokenizer(tmp, DELIMITER);
+
+        while (strTok.hasMoreTokens()) {
+            startItems.add(strTok.nextToken());
+        }
+    }
 
 }

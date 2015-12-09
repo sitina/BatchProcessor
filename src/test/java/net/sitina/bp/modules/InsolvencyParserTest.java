@@ -3,7 +3,6 @@
  */
 package net.sitina.bp.modules;
 
-import org.apache.log4j.Logger;
 import org.htmlparser.Node;
 import org.htmlparser.NodeFilter;
 import org.htmlparser.Parser;
@@ -15,7 +14,10 @@ import org.htmlparser.util.NodeList;
 import org.htmlparser.util.ParserException;
 import org.htmlparser.util.SimpleNodeIterator;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.UnknownHostException;
 import java.util.regex.Matcher;
@@ -26,10 +28,11 @@ import static org.junit.Assert.fail;
 
 public class InsolvencyParserTest {
 
-    private final static Logger log = Logger.getLogger(InsolvencyParserTest.class);
+    private final static Logger log = LoggerFactory.getLogger(InsolvencyParserTest.class);
 
     private final static String SOURCE = "https://isir.justice.cz/isir/ueu/evidence_upadcu_detail.do?id=69785fbb-9c44-4d5d-b67a-d9d517fb329b#Henniges";
 
+    @Ignore
     @Test
     public void testProcessDocument() throws Exception {
         try {

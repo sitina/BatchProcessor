@@ -31,9 +31,7 @@ public class BusinessRegistryParserModule extends Module {
     }
 
     @Override
-    protected void loadConfiguration() {
-        //To change body of implemented methods use File | Settings | File Templates.
-    }
+    protected void loadConfiguration() {}
 
     @Override
     protected void process(String item) {

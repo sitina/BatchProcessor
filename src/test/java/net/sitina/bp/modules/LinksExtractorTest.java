@@ -12,51 +12,51 @@ import java.util.Map;
 
 public class LinksExtractorTest extends BatchProcessorTestBase {
 
-	@Override
-	public void setUp() throws Exception {
-	}
+    @Override
+    public void setUp() throws Exception {
+    }
 
-	@Override
+    @Override
     @Test
-	public void testProcess() {
-		InMemoryHub flIn = new InMemoryHub();
-		InMemoryHub flOut = new InMemoryHub();
-		InMemoryHub lpOut = new InMemoryHub();
+    public void testProcess() {
+        InMemoryHub flIn = new InMemoryHub();
+        InMemoryHub flOut = new InMemoryHub();
+        InMemoryHub lpOut = new InMemoryHub();
 
-		flIn.putItem("testData/");
-		flIn.setComplete();
+        flIn.putItem("testData/");
+        flIn.setComplete();
 
-		Module flm = new FileLoaderModule(flIn, flOut, new ModuleConfiguration(getName(), 0, null), 0);
-		Module lpm = new LinksExtractorModule(flOut, lpOut, new ModuleConfiguration(getName(), 0, null), 0);
+        Module flm = new FileLoaderModule(flIn, flOut, new ModuleConfiguration(getName(), 0, null), 0);
+        Module lpm = new LinksExtractorModule(flOut, lpOut, new ModuleConfiguration(getName(), 0, null), 0);
 
-		Thread t1 = new Thread(flm);
-		t1.start();
+        Thread t1 = new Thread(flm);
+        t1.start();
 
-		Thread t2 = new Thread(lpm);
-		t2.start();
+        Thread t2 = new Thread(lpm);
+        t2.start();
 
-		while (t2.isAlive()) {
-			try {
-				Thread.sleep(10);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
+        while (t2.isAlive()) {
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
-		Assert.assertNotNull(lpOut.getItem());
+        Assert.assertNotNull(lpOut.getItem());
 
-		int count = 0;
-		while (lpOut.getItem() != null) {
-		    count++;
-		}
+        int count = 0;
+        while (lpOut.getItem() != null) {
+            count++;
+        }
 
-		assertEquals(1352, count);
-	}
+        assertEquals(1352, count);
+    }
 
-	@Override
-	public void testConfiguration() {
-		// check whether load of "sequence" that should be present
-		// in link works
+    @Override
+    public void testConfiguration() {
+        // check whether load of "sequence" that should be present
+        // in link works
         InMemoryHub flIn = new InMemoryHub();
         InMemoryHub flOut = new InMemoryHub();
         InMemoryHub lpOut = new InMemoryHub();
@@ -94,6 +94,6 @@ public class LinksExtractorTest extends BatchProcessorTestBase {
         }
 
         assertEquals(85, count);
-	}
+    }
 
 }

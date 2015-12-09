@@ -3,7 +3,6 @@
  */
 package net.sitina.bp.modules;
 
-import org.apache.log4j.Logger;
 import org.htmlparser.Node;
 import org.htmlparser.NodeFilter;
 import org.htmlparser.Parser;
@@ -13,8 +12,9 @@ import org.htmlparser.tags.TableRow;
 import org.htmlparser.util.NodeList;
 import org.htmlparser.util.ParserException;
 import org.htmlparser.util.SimpleNodeIterator;
-import org.junit.Assert;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.UnknownHostException;
 import java.util.regex.Matcher;
@@ -24,7 +24,7 @@ import static org.junit.Assert.fail;
 
 public class InsolvencyLinksExtractorTest {
 
-    private final static Logger log = Logger.getLogger(InsolvencyLinksExtractorTest.class);
+    private final static Logger log = LoggerFactory.getLogger(InsolvencyLinksExtractorTest.class);
 
     private final static String SOURCE = "https://isir.justice.cz/isir/ueu/vysledek_lustrace.do?nazev_osoby=&vyhledat_pouze_podle_zacatku=on&podpora_vyhledat_pouze_podle_zacatku=true&jmeno_osoby=&ic=&datum_narozeni=&rc=&mesto=&cislo_senatu=&bc_vec=&rocnik=&id_osoby_puvodce=&druh_stav_konkursu=&datum_stav_od=&datum_stav_do=&aktualnost=AKTUALNI_I_UKONCENA&druh_kod_udalost=&datum_akce_od=&datum_akce_do=&nazev_osoby_f=&rowsAtOnce=400&captcha_answer=&spis_znacky_datum=01.11.2012&spis_znacky_obdobi=MESICNE";
 

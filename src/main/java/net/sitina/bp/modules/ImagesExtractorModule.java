@@ -20,76 +20,77 @@ import net.sitina.bp.api.ModuleConfiguration;
 
 public class ImagesExtractorModule extends Module {
 
-	private final Collection<String> images = new HashSet<String>();
+    private final Collection<String> images = new HashSet<String>();
 
-	private final List<String> extensions = new ArrayList<String>();
-	
-	public ImagesExtractorModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
-		super(in, out, config, instanceNumber);
-		loadConfiguration();
-	}
-	@Override
-	protected void process(String item) {
-		log.debug("images: " + item);
-		images.clear();
+    private final List<String> extensions = new ArrayList<String>();
 
-		Parser parser = null;
-		NodeList list = null;
-		try {
-			parser = new Parser(item);
-			list = parser.parse(null);
-		} catch (Exception e) {
-			try {
-				parser.reset();
-				list = parser.parse(null);
-			} catch (Exception e2) {
-				throw new BatchProcessorException(this.getClass(), item, e2);
-			}
-		}
+    public ImagesExtractorModule(Hub in, Hub out, ModuleConfiguration config, int instanceNumber) {
+        super(in, out, config, instanceNumber);
+        loadConfiguration();
+    }
 
-		if (list != null) {
-			getImages(list);
-		}
+    @Override
+    protected void process(String item) {
+        log.debug("images: " + item);
+        images.clear();
 
-		for (String image : images) {
-			out.putItem(image);
-		}
-	}
-	
-	private void getImages(NodeList list) {
-		SimpleNodeIterator iterator = list.elements();
+        Parser parser = null;
+        NodeList list = null;
+        try {
+            parser = new Parser(item);
+            list = parser.parse(null);
+        } catch (Exception e) {
+            try {
+                parser.reset();
+                list = parser.parse(null);
+            } catch (Exception e2) {
+                throw new BatchProcessorException(this.getClass(), item, e2);
+            }
+        }
 
-		while (iterator.hasMoreNodes()) {
-			Node node = iterator.nextNode();
+        if (list != null) {
+            getImages(list);
+        }
 
-			if (node.getClass() == LinkTag.class) {
+        for (String image : images) {
+            out.putItem(image);
+        }
+    }
 
-			}
+    private void getImages(NodeList list) {
+        SimpleNodeIterator iterator = list.elements();
 
-			if (node.getClass() == ImageTag.class) {
-				ImageTag tag = (ImageTag) node;
-				String imageUrl = tag.getImageURL();
-				for (String extension : extensions) {
-					if (imageUrl.endsWith(extension)) {
-						images.add(imageUrl);
-						break;
-					}
-				}
-			} else if (node.getChildren() != null) {
-				getImages(node.getChildren());
-			}
-		}
-	}
-	
-	@Override
-	protected void loadConfiguration() {
-		if (configuration.containsKey("extensions")) {
-			StringTokenizer extensionsTokeniser = new StringTokenizer(configuration.getStringProperty("extensions"), ",");
+        while (iterator.hasMoreNodes()) {
+            Node node = iterator.nextNode();
 
-			while (extensionsTokeniser.hasMoreTokens()) {
-				extensions.add(extensionsTokeniser.nextToken());
-			}
-		}
-	}
+            if (node.getClass() == LinkTag.class) {
+
+            }
+
+            if (node.getClass() == ImageTag.class) {
+                ImageTag tag = (ImageTag) node;
+                String imageUrl = tag.getImageURL();
+                for (String extension : extensions) {
+                    if (imageUrl.endsWith(extension)) {
+                        images.add(imageUrl);
+                        break;
+                    }
+                }
+            } else if (node.getChildren() != null) {
+                getImages(node.getChildren());
+            }
+        }
+    }
+
+    @Override
+    protected void loadConfiguration() {
+        if (configuration.containsKey("extensions")) {
+            StringTokenizer extensionsTokeniser = new StringTokenizer(configuration.getStringProperty("extensions"), ",");
+
+            while (extensionsTokeniser.hasMoreTokens()) {
+                extensions.add(extensionsTokeniser.nextToken());
+            }
+        }
+    }
 
 }

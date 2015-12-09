@@ -5,8 +5,8 @@ import java.lang.annotation.Documented;
 @Documented
 public @interface ModuleParameter {
 
-	boolean required() default false;
-	
-	String description();
-	
+    boolean required() default false;
+
+    String description();
+
 }

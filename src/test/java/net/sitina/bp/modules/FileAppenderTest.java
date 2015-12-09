@@ -15,31 +15,31 @@ public class FileAppenderTest extends BatchProcessorTestBase {
 
     private final String path = "/tmp/file";
 
-	@Override
-	public void setUp() throws Exception {
-	    in = new InMemoryHub();
-	    out = new InMemoryHub();
+    @Override
+    public void setUp() throws Exception {
+        in = new InMemoryHub();
+        out = new InMemoryHub();
 
-	    in.putItem("value");
-	    in.setComplete();
+        in.putItem("value");
+        in.setComplete();
 
-	    Map<String, String> properties = new HashMap<String, String>();
-	    properties.put("path", path);
+        Map<String, String> properties = new HashMap<String, String>();
+        properties.put("path", path);
 
-	    config = new ModuleConfiguration(getClass().toString(), 1, properties);
+        config = new ModuleConfiguration(getClass().toString(), 1, properties);
 
-	    module = new FileAppenderModule(in, out, config, instanceNumber);
-	}
+        module = new FileAppenderModule(in, out, config, instanceNumber);
+    }
 
-	@After
-	public void cleanup() throws Exception {
+    @After
+    public void cleanup() throws Exception {
         File result = new File(path);
         if (result.exists()) {
             result.delete();
         }
-	}
+    }
 
-	@Override
+    @Override
     @Test
     public void testProcess() {
         File result = new File(path);
@@ -69,9 +69,9 @@ public class FileAppenderTest extends BatchProcessorTestBase {
         result.delete();
     }
 
-	@Override
-	public void testConfiguration() {
-	    // nothing special to test here
-	}
+    @Override
+    public void testConfiguration() {
+        // nothing special to test here
+    }
 
 }

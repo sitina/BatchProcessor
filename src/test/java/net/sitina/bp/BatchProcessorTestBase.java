@@ -8,14 +8,15 @@ import net.sitina.bp.api.Hub;
 import net.sitina.bp.api.Module;
 import net.sitina.bp.api.ModuleConfiguration;
 
-import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public abstract class BatchProcessorTestBase extends TestCase {
 
-	protected Logger log = Logger.getLogger(this.getClass());
+	protected Logger log = LoggerFactory.getLogger(this.getClass());
 
 	protected Module module = Mockito.mock(Module.class);
 

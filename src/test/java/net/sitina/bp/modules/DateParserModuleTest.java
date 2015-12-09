@@ -45,7 +45,7 @@ public class DateParserModuleTest extends BatchProcessorTestBase {
 
     @Test
     public void processCorrectDate() {
-        String date = ((DateParserModule)module).processDate("'12.5.2035'");
+        String date = ((DateParserModule) module).processDate("'12.5.2035'");
         assertNotNull(date);
         assertEquals("'2035-05-12'", date);
     }

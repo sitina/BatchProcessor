@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface Configuration {
 
-	List<ModuleConfiguration> getModuleConfigurations();
-	
+    List<ModuleConfiguration> getModuleConfigurations();
+
 }

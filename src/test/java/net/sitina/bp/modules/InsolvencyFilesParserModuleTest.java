@@ -38,7 +38,7 @@ public class InsolvencyFilesParserModuleTest extends BatchProcessorTestBase {
         }
 
         assertFalse(count == 0);
-        log.error(count);
+        log.error("Errors count is " + count);
     }
 
     @Test
@@ -54,7 +54,7 @@ public class InsolvencyFilesParserModuleTest extends BatchProcessorTestBase {
         }
 
         assertFalse(count == 0);
-        log.error(count);
+        log.error("Errors count is " + count);
     }
 
     @Override
