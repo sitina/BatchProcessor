@@ -8,6 +8,7 @@ import net.sitina.bp.api.ModuleConfiguration;
 import net.sitina.bp.impl.InMemoryHub;
 import org.htmlparser.util.ParserException;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.net.UnknownHostException;
@@ -42,7 +43,8 @@ public class InsolvencyFilesParserModuleTest extends BatchProcessorTestBase {
     }
 
     @Test
-    public void testProcessSecond() {
+    @Ignore
+    public void processSecond() {
         in.putItem("https://isir.justice.cz/isir/ueu/evidence_upadcu_detail.do?id=db97147d-6946-4eae-9bf4-56c0e26aa847");
         module.run();
 
